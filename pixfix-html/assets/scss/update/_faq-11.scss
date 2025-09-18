@@ -1,0 +1,169 @@
+@use "../utilities" as *;
+
+
+
+
+.faq-11 {
+    background: #F8F4EF;
+    padding-bottom: 375px;
+    border-radius: 0 0 40px 40px;
+
+    @include breakpoint(md) {
+        padding-bottom: 305px;
+    }
+
+    @include breakpoint(sm) {
+        padding-bottom: 295px;
+    }
+
+    &__text {
+        .section-heading {
+            margin-bottom: 42px;
+
+            .section-title {
+                margin: 0;
+            }
+        }
+
+        @include breakpoint(md) {
+            margin-bottom: 30px;
+        }
+    }
+
+    &__contact {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+
+        .contact {
+            span {
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 28.8px;
+                margin-bottom: 0;
+                line-height: 1;
+                display: block;
+                color: var(--rr-color-heading-primary);
+            }
+
+            a {
+                font-size: 21px;
+                font-weight: 700;
+                line-height: 36px;
+                letter-spacing: -0.72px;
+                color: var(--rr-color-heading-primary);
+                &:hover{
+                    color: var(--rr-color-theme-primary);
+                }
+            }
+        }
+    }
+
+
+
+    &__tab {
+        .accordion-item {
+            border: 2px solid #DDDDDD;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            color: inherit;
+            overflow: hidden;
+            background-color: transparent;
+
+            &:last-of-type {
+                margin-bottom: 0;
+
+                @include breakpoint(md) {
+                    margin-bottom: 30px;
+                }
+            }
+
+            &:not(:first-of-type) {
+                border: 2px solid #DDDDDD;
+            }
+
+            .accordion-body {
+                padding: 0px 88px 34px 40px;
+
+                p {
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 28.8px;
+                    margin-bottom: 0;
+                    color: #000000;
+                }
+
+                @include breakpoint(sm) {
+                    padding: 20px;
+                }
+            }
+
+            .accordion-header {
+                .accordion-button {
+                    font-size: 24px;
+                    font-weight: 700;
+                    line-height: 36px;
+                    cursor: pointer;
+                    overflow: hidden;
+                    color: #000000;
+                    background: transparent;
+                    letter-spacing: -0.72px;
+                    padding: 27px 40px;
+                    transition: .3s;
+                    font-family: var(--rr-ff-heading);
+
+                    @include breakpoint(sm) {
+                        padding: 20px;
+                        font-size: 20px;
+                    }
+
+                    span {
+                        margin-right: 22px;
+
+                        @include breakpoint(sm) {
+                            display: none;
+                        }
+                    }
+
+                    &.collapsed {
+                        padding: 30px 40px;
+
+                        @include breakpoint(sm) {
+                            padding: 20px;
+                        }
+                    }
+
+                    &:focus {
+                        z-index: 3;
+                        border-color: inherit;
+                        outline: 0;
+                        box-shadow: inherit;
+                    }
+
+                    &::after {
+                        margin-left: auto;
+                        content: "\2b";
+                        height: inherit;
+                        line-height: 1;
+                        font-weight: 400;
+                        font-size: 20px;
+                        background-image: inherit;
+                        font-family: "Font Awesome 6 Pro";
+                    }
+
+                    &:not(.collapsed) {
+                        color: inherit;
+                        background-color: transparent;
+                        box-shadow: inherit;
+
+                        &::after {
+                            content: "\f068";
+                            transform: inherit;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+}

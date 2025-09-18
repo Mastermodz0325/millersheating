@@ -1,0 +1,279 @@
+@use "../utilities" as *;
+
+/**----------------------------------------
+START: Faq CSS
+----------------------------------------*/
+
+.faq-content{
+    .section-heading{
+        .sub-heading{
+            @include breakpoint(sm){
+                font-size: 13px;
+            }
+        }
+        .section-title{
+            font-size: 45px;
+            @include breakpoint(lg){
+                margin-left: 0;
+            }
+            @include breakpoint(md) {
+                margin-left: 0;
+                max-width: 600px;
+                width: 100%;
+                font-size: 32px;
+            }
+            @include breakpoint(sm) {
+                font-size: 32px;
+            }
+        }
+    }
+    .accordion{
+        .accordion-item{
+            border-radius: 0;
+            border-radius: 20px;
+            border: 1px solid #DDDDDD;
+            .accordion-header{
+                overflow: hidden;
+                border-radius: 20px 20px 0 0;
+                .accordion-button{
+                    background: var(--rr-color-common-white);
+                    font-family: var(--rr-ff-heading);
+                    color: var(--rr-color-common-dark);
+                    box-shadow: none;
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 16px;
+                    line-height: 24px;
+                    text-transform: uppercase;
+                    padding: 23px;
+                    border-radius: 20px;
+                    @include breakpoint(sm){
+                        font-size: 18px;
+                        line-height: 1.5;
+                    }
+                    &:after{
+                        background-image: none;
+                        font-family: "Font Awesome 6 Pro";
+                        font-size: 14px;
+                        font-weight: 700;
+                        content: "\2b";
+                        color: #6E777D;
+                        height: 30px;
+                        width: 30px;
+                        border: 1px solid var(--rr-color-border-1);
+                        @include flex-center;
+                        border-radius: 50%;
+                        @include breakpoint(sm){
+                            margin-left: 20px;
+                        }
+                    }
+                    &:not(.collapsed){
+                        background-color: var(--rr-color-theme-green);
+                        color: var(--rr-color-common-white);
+                        border-radius: 20px 20px 0 0;
+                        &:after{
+                            background-color: rgb(255 255 255 / 20%);
+                            color: var(--rr-color-common-white);
+                            content: "\f068";
+                            transform: rotate(0);
+                            border: transparent;
+                        }
+                    }
+                }
+            }
+            .accordion-body{
+                font-size: 16px;
+                color: var(--rr-color-text-body);
+                padding: 0;
+                padding: 20px 30px;
+            }
+        }
+    }
+}
+
+.faq-img{
+    padding-left: 55px;
+    width: 100%;
+    height: 572px;
+    img{
+        max-width: 580px;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 20px;
+    }
+    @include breakpoint(lg){
+        margin: 0 auto;
+        margin-top: 40px;
+    }
+    @include breakpoint(md){
+        padding-left: 0;
+        height: auto;
+    }
+}
+
+//faq-section 6
+.rrfaq-section{
+    background: #F4FBF9;
+}
+.rrfaq-img{
+    width: 100%;
+    height: 554px;
+    position: relative;
+   & .play-btn{
+        background-color: var(--rr-color-common-white);
+        color: var(--rr-color-theme-green);
+        font-size: 20px;
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position:absolute;
+        left: 50%;
+        top: 50%;
+        transform: translateY(-50%) translateX(-50%);
+        z-index: 1;
+        -webkit-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        -ms-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+   }
+
+  &.ripple, .ripple:before, .ripple:after {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 80px;
+    height: 80px;
+    transform: translateX(-50%) translateY(-50%);
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+    -webkit-box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.5);
+    -moz-box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.5);
+    -ms-box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.5);
+    -o-box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.5);
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.5);
+    -webkit-animation: rippleOne 3s infinite;
+    -moz-animation: rippleOne 3s infinite;
+    -ms-animation: rippleOne 3s infinite;
+    -o-animation: rippleOne 3s infinite;
+    animation: rippleOne 3s infinite;
+}
+    img{
+        max-width: 570px;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 20px;
+    }
+
+    @include breakpoint(lg){
+        margin: 0 auto;
+        margin-bottom: 40px;
+    }
+    @include breakpoint(md){
+        padding-left: 0;
+        height: 500px;
+    }
+}
+
+.rrfaq-content{
+    .section-heading-4{
+        .sub-heading-6{
+            font-family: var(--rr-ff-heading);
+            margin-bottom: 10px;
+            position: relative;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 24px;
+            text-transform: uppercase;
+            color: #2AB97E;
+            &::before{
+            background: var(--rr-color-theme-green);
+            position: absolute;
+            height: 1px;
+            width: 29px;
+            content: '';
+            bottom: -1px;
+            left: 0;
+            }
+        }
+        .section-title{
+            margin-bottom: 0;
+        }
+    }
+    .rraccordion{
+        .rraccordion-item{
+            background: #FFFFFF;
+            box-shadow: 0px 4.4px 20px rgba(19, 16, 34, 0.05);
+            border-radius: 20px;
+            .rraccordion-header{
+                
+                .rraccordion-button{
+                    font-family: var(--rr-ff-heading);
+                    color: #232323;
+                    box-shadow: none;
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 20px;
+                    line-height: 28px;
+                    width: 100%;
+                    padding: 22px 30px 0px 30px;
+                    text-align: left;
+                    display: -webkit-box;
+                    display: -moz-box;
+                    display: -ms-flexbox;
+                    display: -webkit-flex;
+                    display: flex;
+                    justify-content: space-between;
+                    @include breakpoint(sm){
+                        font-size: 18px;
+                        line-height: 1.5;
+                    }
+                    &:after{
+                        background-image: none;
+                        font-family: "Font Awesome 6 Pro";
+                        font-size: 14px;
+                        content: "\2b";
+                        color:var(--rr-color-theme-green) ;
+                        @include breakpoint(sm){
+                            margin-left: 20px;
+                        }
+                    }
+                    &:not(.collapsed){
+                        color:#232323;
+                        &:after{
+                            
+                            color: var(--rr-color-theme-green);
+                            content: "\f068";
+                            transform: rotate(0);
+                        }
+                    }
+                    &.collapsed{
+                        padding-bottom: 20px;
+                    }
+                }
+            }
+
+            .rraccordion-body{
+                font-size: 16px;
+                font-size: var(--rr-ff-body);
+                color: var(--rr-color-text-body);
+                padding-top: 20px;
+                padding-bottom: 20px;
+                margin: 0 30px;
+                line-height: 30px;
+                border-top: 1px solid #DDDDDD;
+                @include transition (all 0.3s ease-in-out);
+    
+            }
+        }
+    }
+}

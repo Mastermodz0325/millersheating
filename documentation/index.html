@@ -1,0 +1,902 @@
+<!doctype html>
+<html lang="en">
+
+<head lang="en">
+    <meta http-equiv="content-type" content="text/html;charset=utf-8">
+    <title>PixFix || Template Documentation</title>
+    <!-- Framework CSS -->
+    <link rel="stylesheet" href="assets/blueprint-css/screen.css">
+    <link rel="stylesheet" href="assets/blueprint-css/print.css" media="print">
+    <!--[if lt IE 8]><link href="assets/blueprint-css/ie.css" type="text/css"<![endif]-->
+    <link rel="stylesheet" href="assets/blueprint-css/plugins/fancy-type/screen.css">
+    <style>
+        p,
+        table,
+        hr,
+        .box {
+            margin-bottom: 25px;
+        }
+
+        .box p {
+            margin-bottom: 10px;
+        }
+
+        .added1 {
+            background-color: #336600;
+            color: #FFFFFF;
+        }
+
+    </style>
+
+    <!-- Syntax Highlighter -->
+    <link rel="stylesheet" href="syntax-highlighter/styles/shCore.css" media="all">
+    <link rel="stylesheet" href="syntax-highlighter/styles/shThemeDefault.css" media="all">
+</head>
+
+
+<body>
+    <div class="container">
+
+        <h3 class="center alt">&ldquo;PixFix&rdquo; Documentation by &ldquo;RRDevs&rdquo; v1.2</h3>
+
+        <hr>
+
+        <h1 class="center">&ldquo;PixFix&rdquo;</h1>
+
+        <div class="borderTop">
+            <div class="span-6 colborder info prepend-1">
+                <p class="prepend-top">
+                    <strong>
+                        Created:09/05/2024<br>
+                        Updated:29/12/2024<br>
+                        By: <a href="http://www.pixfix.com">RRDevs</a><br>
+                        <br>
+                    </strong><strong><br>
+                    </strong>
+                </p>
+            </div><!-- end div .span-6 -->
+
+            <div class="span-12 last">
+                <p class="prepend-top append-0">Thank you for purchasing our template. If you have any questions that are beyond the scope of this help file, please contact our support. Thanks so much!</p>
+            </div>
+        </div><!-- end div .borderTop -->
+
+        <hr>
+
+        <h2 id="toc" class="alt">Table of Contents</h2>
+        <ol class="alpha">
+            <li><a href="#htmlStructure">HTML Structure</a></li>
+            <li><a href="#temp-components">Template Components</a></li>
+            <li><a href="#cssFiles">CSS Files and Structure</a></li>
+            <li><a href="#javascript">JavaScript</a></li>
+            <li><a href="#credits">Sources and Credits</a></li>
+
+            <li><a href="#php">PHP Code Explanation</a> <em class="quiet small">(If your template uses PHP)</em></li>
+            <li><a href="#">Flash</a> <em class="quiet small">(If your template uses Flash)</em></li>
+            <li><a href="#">API Usage</a> <em class="quiet small">(If your template uses an API)</em></li>
+            <li><a href="#">Any additional unique features that need an overview</a></li>
+        </ol>
+
+        <hr>
+
+        <h3 id="htmlStructure"><strong>A) HTML Structure</strong> - <a href="#toc">top</a></h3>
+        <p>Below is the general HTML structure of the landing page.<br>
+        </p>
+
+        <h4 id="front-html-structures"><strong>1) index.html File Structure</strong> - <a href="#toc">top</a></h4>
+
+        <p>The template page's layout consist of top that show the logo and main menu, hero section that show background image, beforecontent that show some amaizing content, about section contain about your some info & feature, service section contained all services, work section you can showcase your portfolio with awesome animation, skills section here you can add some skills, team section is for your team members, testimonial section here you can published your customer reviews, call to action this for call to action content, contact section here you can put your contact information & footer that show copyright information.</p>
+
+        <pre class="brush: html;" id="front-html-structure-pre">
+&lt;!DOCTYPE html>
+&lt;html class="no-js" lang="en">
+	&lt;head>
+		&lt;meta charset="utf-8">
+		&lt;meta http-equiv="x-ua-compatible" content="ie=edge">
+		&lt;meta name="viewport" content="width=device-width, initial-scale=1">
+		&lt;meta name="description" content="">
+
+		&lt;!-- Site Title -->
+		&lt;title>PixFix - Handyman Services HTML5 Template&lt;/title>
+
+		&lt;!-- Place favicon.ico in the root directory -->
+		&lt;link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
+
+		&lt;!-- CSS here -->
+		&lt;link rel="stylesheet" href="assets/css/bootstrap.min.css">
+		&lt;link rel="stylesheet" href="assets/css/fontawesome.min.css">
+		&lt;link rel="stylesheet" href="assets/css/venobox.min.css">
+		&lt;link rel="stylesheet" href="assets/css/animate.min.css">
+		&lt;link rel="stylesheet" href="assets/css/keyframe-animation.css">
+		&lt;link rel="stylesheet" href="assets/css/odometer.min.css">
+		&lt;link rel="stylesheet" href="assets/css/swiper.min.css">
+		&lt;link rel="stylesheet" href="assets/css/main.css">
+	&lt;/head>
+    
+    &lt;body>
+    &lt;!--[if lt IE 8]>
+        &lt;p class="browserupgrade">You are using an &lt;strong>outdated&lt;/strong> browser. Please &lt;a href="http://browsehappy.com/">upgrade your browser&lt;/a> to improve your experience.&lt;/p>
+    &lt;![endif]-->
+    
+	&lt;div id="preloader">
+		&lt;div class="preloader-close">x&lt;/div>
+		&lt;div class="sk-three-bounce">
+			&lt;div class="sk-child sk-bounce1">&lt;/div>
+			&lt;div class="sk-child sk-bounce2">&lt;/div>
+			&lt;div class="sk-child sk-bounce3">&lt;/div>
+		&lt;/div>
+	&lt;/div>
+	&lt;!-- ./ preloader -->
+        
+        &lt;header class="header">
+            
+        &lt;/header>&lt;!-- /.Main Header -->
+
+        &lt;div id="popup-search-box">
+            
+        &lt;/div>&lt;!-- /#popup-search-box -->
+
+		&lt;section class="slider-section">
+            
+        &lt;/section>&lt;!-- ./ slider-section -->
+        
+        &lt;section class="about-section">
+            
+        &lt;/section>&lt;!-- ./ about-section -->
+        
+        &lt;section class="service-section">
+    
+        &lt;/section>&lt;!-- ./ service-section -->
+        
+        &lt;section class="goal-section">
+            
+        &lt;/section>&lt;!-- ./ goal-section -->
+        
+        &lt;section class="subscribe-section">
+            
+        &lt;/section>&lt;!-- ./ subscribe-section -->
+        
+        &lt;section class="team-section">
+            
+        &lt;/section>&lt;!-- ./team-section -->
+        
+        &lt;section class="testimonial-section">
+            
+        &lt;/section>&lt;!-- ./testimonial-section -->
+        
+        &lt;section class="counter-section">
+            
+        &lt;/section>&lt;!-- ./counter-section -->
+        
+        &lt;section class="booking-section">
+            
+        &lt;/section>&lt;!-- ./booking-section -->
+        
+        &lt;section class="pricing-section">
+            
+        &lt;/section>&lt;!-- ./pricing-section -->
+        
+        &lt;section class="blog-section">
+            
+        &lt;/section>&lt;!-- ./blog-section -->
+        
+        &lt;section class="footer-section">
+            
+        &lt;/section>&lt;!-- ./footer-section -->
+       
+        &lt;div id="scrollup">
+            &lt;button id="scroll-top" class="scroll-to-top">&lt;i class="fa-regular fa-arrow-up-long">&lt;/i>&lt;/button>
+        &lt;/div>
+        &lt;!--scrollup-->
+
+		&lt;!-- JS here -->
+        &lt;script src="assets/js/vendor/jquary-3.6.0.min.js">&lt;/script>
+        &lt;script src="assets/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js">&lt;/script>
+        &lt;script src="assets/js/vendor/bootstrap-bundle.js">&lt;/script>
+        &lt;script src="assets/js/vendor/imagesloaded-pkgd.js">&lt;/script>
+        &lt;script src="assets/js/vendor/waypoints.min.js">&lt;/script>
+        &lt;script src="assets/js/vendor/venobox.min.js">&lt;/script>
+        &lt;script src="assets/js/vendor/odometer.min.js">&lt;/script>
+        &lt;script src="assets/js/vendor/meanmenu.js">&lt;/script>
+        &lt;script src="assets/js/vendor/smooth-scroll.js">&lt;/script>
+        &lt;script src="assets/js/vendor/jquery.isotope.js">&lt;/script>
+        &lt;script src="assets/js/vendor/wow.min.js">&lt;/script>
+        &lt;script src="assets/js/vendor/swiper.min.js">&lt;/script>
+        &lt;script src="assets/js/ajax-form.js">&lt;/script>
+        &lt;script src="assets/js/slider.js">&lt;/script>
+        &lt;script src="assets/js/main.js">&lt;/script>
+    &lt;/body>
+&lt;/html>
+        </pre>
+        <hr>
+
+
+        <h3 id="temp-components"><strong>B) Template Components</strong> - <a href="#toc">top</a></h3>
+        <p>The site is made of many sections like header, slider, testimonials, services and more...</p>
+
+        <h4 id="header"><strong>1) Header Section</strong> - <a href="#toc">top</a></h4>
+
+
+        <pre class="brush: html;">
+	&lt;header class="header sticky-active">
+	&lt;div class="top-bar">
+		&lt;div class="container">
+			&lt;div class="top-bar-inner">
+				&lt;ul class="top-bar-list">
+					&lt;li>&lt;i class="fa-sharp fa-solid fa-envelope">&lt;/i>&lt;a href="mailto:info@example.com">info@example.com&lt;/a>&lt;/li
+				&lt;/ul>
+			&lt;/div>
+		&lt;/div>
+	&lt;/div>
+	&lt;div class="primary-header">
+		&lt;div class="container">
+			&lt;div class="primary-header-inner">
+				&lt;div class="header-logo d-lg-block">
+					&lt;a href="index.html">
+						&lt;img src="assets/img/logo/logo.png" alt="Logo">
+					&lt;/a>
+				&lt;/div>
+				&lt;div class="header-menu-wrap">
+					&lt;div class="mobile-menu-items">
+						&lt;ul class="sub-menu">
+							&lt;li class="menu-item-has-children active">
+								&lt;a href="index.html">Home&lt;/a>
+								&lt;ul>
+									&lt;li>&lt;a href="index.html">Car Repair&lt;/a>&lt;/li>
+								&lt;/ul>
+							&lt;/li>
+						&lt;/ul>
+					&lt;/div>
+				&lt;/div>
+				&lt;!-- /.header-menu-wrap -->
+				&lt;div class="header-right">
+					&lt;div class="header-contact">
+						&lt;img src="assets/img/icon/header-icon.png" alt="icon">
+						&lt;h4 class="contact">&lt;span>Need help?&lt;/span>&lt;a href="tel:3075550133">(307) 555-0133&lt;/a>&lt;/h4>
+					&lt;/div>
+					&lt;div class="header-logo d-none d-lg-none">
+						&lt;a href="index.html">
+							&lt;img src="assets/img/logo/logo.png" alt="Logo">
+						&lt;/a>
+					&lt;/div>
+					&lt;div class="header-right-item">
+						&lt;a href="javascript:void(0)" class="mobile-side-menu-toggle"
+							>&lt;i class="fa-sharp fa-solid fa-bars">&lt;/i
+						>&lt;/a>
+					&lt;/div>
+				&lt;/div>
+				&lt;!-- /.header-right -->
+			&lt;/div>
+			&lt;!-- /.primary-header-inner -->
+		&lt;/div>
+	&lt;/div>
+&lt;/header>
+&lt;!-- /.Main Header -->
+</pre>
+
+
+        <hr>
+        <h4 id="slider"><strong>2) Slider Section</strong> - <a href="#toc">top</a></h4>
+        <br>
+        <pre class="brush: html;">
+		&lt;div class="slider-section">
+			&lt;div class="pixfix-slider swiper-container">
+				&lt;div class="swiper-wrapper">
+					&lt;div class="swiper-slide">
+						&lt;div class="slider-item">
+							&lt;div class="container">
+								&lt;div class="row align-items-center">
+									&lt;div class="col-xl-5 col-lg-12 col-md-12">
+										&lt;div class="slider-content-wrap">
+											&lt;div class="slider-content-inner">
+												&lt;div class="slider-content">
+													&lt;div class="shapes">
+														&lt;div class="shape shape-1">&lt;img src="assets/img/shapes/hero-shape-1.png" alt="shape">&lt;/div>
+													&lt;/div>
+													&lt;div class="pixfix-caption sub-heading">
+														&lt;div class="inner-layer">
+															&lt;div class="pixfix-small-cap" data-animation="pixfix-fadeInUp" data-delay="1000ms" data-duration="1200ms">
+															Innovation at Work
+															&lt;/div>
+														&lt;/div>
+													&lt;/div>
+													&lt;ul class="slider-list" data-animation="pixfix-fadeInUp" data-delay="1800ms" data-duration="2000ms">
+														&lt;li>&lt;i class="fa-sharp fa-solid fa-check">&lt;/i>Bringing back the functionality you need Repair&lt;/li>
+													&lt;/ul>
+													&lt;div class="slider-btn-wrap" data-animation="pixfix-fadeInUp" data-delay="2000ms" data-duration="2200ms">
+														&lt;a href="about.html" class="rr-primary-btn">Read More&lt;i class="fa-sharp fa-regular fa-arrow-right">&lt;/i>&lt;/a>
+														&lt;div class="video-btn">
+															&lt;a
+																class="video-popup"
+																data-autoplay="true"
+																data-vbtype="video"
+																href="https://youtu.be/Hh3MjLaDNG8?feature=shared">
+																&lt;div class="play-btn">
+																	&lt;i class="fa-sharp fa-solid fa-play">&lt;/i>
+																	&lt;div class="ripple">&lt;/div>
+																&lt;/div>
+																&lt;span>See How It Works&lt;/span>
+															&lt;/a>
+														&lt;/div>
+													&lt;/div>
+												&lt;/div>
+											&lt;/div>
+										&lt;/div>
+									&lt;/div>
+									&lt;div class="col-xl-7 col-lg-12 col-md-12">
+										&lt;div class="slider-img">
+											&lt;img class="bg-img" src="assets/img/shapes/hero-man-bg.png" alt="shape">
+											&lt;div class="slider-men wow fade-in-bottom" data-wow-delay="400ms">
+												&lt;img src="assets/img/images/hero-men.png" alt="hero">
+											&lt;/div>
+										&lt;/div>
+									&lt;/div>
+								&lt;/div>
+							&lt;/div>
+						&lt;/div>
+					&lt;/div>
+				&lt;/div>
+				&lt;div class="pixfix-swiper-pagination">&lt;/div>
+			&lt;/div>
+		&lt;/div>
+		&lt;!-- ./ slider-section -->
+	
+</pre>
+
+        <hr>
+
+        <h4 id="services"><strong>3) About Section</strong> - <a href="#toc">top</a></h4>
+        <br>
+        <pre class="brush: html;">
+		&lt;section class="about-section pt-120 pb-120">
+			&lt;div class="container">
+				&lt;div class="row gy-lg-0 gy-4 align-items-center">
+					&lt;div class="col-lg-6">
+						&lt;div class="about-img-wrap wow fade-in-left" data-wow-delay="400ms">
+							&lt;div class="left-img">
+								&lt;div class="img-item">
+									&lt;img class="img-1" src="assets/img/images/about-img-1.jpg" alt="about">
+								&lt;/div>
+							&lt;/div>
+							&lt;div class="right-img">
+								&lt;div class="img-item">
+									&lt;img class="img-3" src="assets/img/images/about-img-3.jpg" alt="about">
+								&lt;/div>
+							&lt;/div>
+						&lt;/div>
+					&lt;/div>
+					&lt;div class="col-lg-6">
+						&lt;div class="about-content">
+							&lt;div class="section-heading heading-2">
+								&lt;h4 class="sub-heading wow fade-in-right" data-wow-delay="200ms">About us&lt;/h4>
+								&lt;h2 class="section-title wow fade-in-right" data-wow-delay="300ms">Repairing your worry restoring &lt;br> your peace of mind&lt;/h2>
+								&lt;p class="wow fade-in-right" data-wow-delay="400ms">Lorem ipsum dolor sit amet consectetur. Tortor sed vel ipsum id amet molestie the  viverra diam velit elit viverra. Malesuada blandit in habitasse malesuada&lt;/p>
+							&lt;/div>
+							&lt;div class="about-item-wrap wow fade-in-right" data-wow-delay="500ms">
+								&lt;div class="about-item">
+									&lt;div class="about-icon">&lt;img src="assets/img/icon/about-icon-1.png" alt="icon">&lt;/div>
+									&lt;h3 class="title">Repair Genius Fix Master&lt;/h3>
+									&lt;p>Lorem ipsum dolit amet consectetur. &lt;br> Proin viverra maec donec &lt;/p>
+								&lt;/div>
+							&lt;/div>
+							&lt;a href="about.html" class="rr-primary-btn wow fade-in-right" data-wow-delay="600ms">Read More &lt;i class="fa-sharp fa-regular fa-arrow-right">&lt;/i>&lt;/a>
+						&lt;/div>
+					&lt;/div>
+				&lt;/div>
+			&lt;/div>
+		&lt;/section>
+		&lt;!-- ./ about-section -->
+</pre>
+
+        <br>
+
+        <hr>
+
+        <h4 id="about"><strong>4) Service Section</strong> - <a href="#toc">top</a></h4>
+        <br>
+        <pre class="brush: html;">
+		&lt;section class="service-section pb-120">
+			&lt;div class="container">
+				&lt;div class="section-heading text-center">
+					&lt;h4 class="sub-heading wow fade-in-bottom" data-wow-delay="200ms">Our services&lt;/h4>
+					&lt;h2 class="section-title wow fade-in-bottom" data-wow-delay="400ms">Trust us with your repair needs &lt;br> Repairing with care&lt;/h2>
+				&lt;/div>
+				&lt;div class="row gy-lg-0 gy-4 justify-content-center">
+					&lt;div class="col-lg-4 col-md-6">
+						&lt;div class="service-item wow fade-in-bottom" data-wow-delay="200ms">
+							&lt;div class="service-content">
+								&lt;div class="service-icon">
+									&lt;svg width="65" height="65" viewBox="0 0 65 65" fill="none" xmlns="http://www.w3.org/2000/svg">
+										&lt;path d="M61.072 31.8652H59.414V28.8184H59.7991C60.4051 28.8184 60.9864 28.5776 61.4149 28.1491C61.8435 27.7205 62.0842 27.1393 62.0842 26.5332C62.0842 25.9271 61.8435 25.3459 61.4149 24.9174C60.9864 24.4888 60.4051 24.248 59.7991 24.248H47.4369C47.3255 24.2426 47.2142 24.2604 47.11 24.3002C47.0058 24.34 46.911 24.401 46.8316 24.4793C46.7521 24.5576 46.6898 24.6515 46.6485 24.7551C46.6073 24.8587 46.5879 24.9698 46.5917 25.0812V39.1016H45.5761V37.177C45.5761 36.6862 45.1278 36.3086 44.6367 36.3086H42.5292V29.723C42.5372 29.5384 42.4861 29.3561 42.3832 29.2025L32.762 15.871C32.6827 15.7556 32.577 15.6607 32.4538 15.5941C32.3305 15.5276 32.1932 15.4913 32.0532 15.4883H30.0854C29.9293 15.4912 29.7767 15.5346 29.6424 15.6142C29.5081 15.6937 29.3966 15.8067 29.319 15.9421C29.2668 16.0347 29.2308 16.1355 29.2127 16.2402L25.8838 22.1362C25.8073 22.2715 25.7676 22.4246 25.7686 22.58C25.7696 22.7355 25.8113 22.888 25.8895 23.0224C25.9677 23.1567 26.0798 23.2683 26.2145 23.3459C26.3493 23.4235 26.502 23.4645 26.6574 23.4647C27.3821 23.4647 27.9286 23.9868 27.9286 24.6783C27.9286 25.3588 27.3638 25.8921 26.6428 25.8921C26.4188 25.8807 26.2016 25.8112 26.0126 25.6904C25.8236 25.5696 25.6693 25.4017 25.5649 25.2031C25.655 24.9598 25.661 24.6933 25.5817 24.4463C25.5025 24.1992 25.3426 23.9859 25.1278 23.8404L22.7753 22.2456C22.2014 21.8553 21.5206 21.6525 20.8267 21.6652C20.1327 21.6779 19.4598 21.9056 18.9006 22.3167C17.6613 23.2359 16.5724 24.3422 15.6731 25.596C13.6531 26.0935 11.7293 26.9218 9.97973 28.0472C9.39903 28.4257 8.84517 28.8438 8.3221 29.2986C7.64261 29.8897 7.02757 30.551 6.48725 31.2715C6.42997 31.33 6.38136 31.3964 6.34291 31.4686C6.28692 31.547 6.23081 31.6253 6.1771 31.7045L2.46119 37.1846L1.0058 39.3311C0.717396 39.7567 0.590646 40.2714 0.648423 40.7823L1.18683 45.5344C1.22168 45.8431 1.32299 46.1406 1.48378 46.4064C1.64458 46.6722 1.86104 46.9 2.11829 47.0742L4.43594 48.6456C5.00782 49.0324 5.66305 49.2784 6.34815 49.3636C7.03324 49.4488 7.72877 49.3708 8.37796 49.1359L8.39066 49.1312C8.99674 48.9075 9.52862 48.5195 9.92679 48.0108C10.3665 48.2116 10.8441 48.3158 11.3275 48.3162C11.5461 48.3161 11.7643 48.2953 11.979 48.254C12.5789 48.1389 13.137 47.8651 13.5953 47.4612C14.0536 47.0572 14.3952 46.5379 14.5848 45.9571C14.7743 45.3764 14.8048 44.7555 14.673 44.159C14.5412 43.5625 14.2521 43.0122 13.8356 42.5654L16.6826 38.3661L20.1296 33.282C20.5135 33.4285 20.921 33.5037 21.3319 33.5038C21.5505 33.5037 21.7687 33.4829 21.9834 33.4416C22.5807 33.3271 23.1365 33.0553 23.5937 32.6543C24.0509 32.2533 24.3929 31.7376 24.5843 31.1604C24.7758 30.5832 24.8098 29.9653 24.6829 29.3706C24.556 28.7759 24.2727 28.2257 23.8623 27.777L24.5453 26.7696C24.8186 27.0503 25.1446 27.2742 25.5046 27.4286C25.8647 27.583 26.2516 27.6648 26.6433 27.6693C28.3609 27.6693 29.7065 26.3556 29.7065 24.6784C29.71 24.115 29.5522 23.5623 29.2517 23.0856C28.9512 22.6089 28.5206 22.2281 28.0108 21.9883L30.1102 18.2725L36.5498 29.8062L34.1017 36.3086H23.4531C23.3392 36.307 23.2262 36.3284 23.1208 36.3716C23.0154 36.4148 22.9199 36.4789 22.8399 36.5601C22.76 36.6412 22.6973 36.7377 22.6557 36.8437C22.614 36.9497 22.5943 37.0631 22.5976 37.177V39.1016H18.4786C17.7114 39.1016 17.1386 39.7754 17.1386 40.5427V43.9975C17.1386 44.7648 17.7114 45.4492 18.4786 45.4492H22.9488C23.4222 47.7344 25.5005 49.5414 27.9435 49.5414C30.3864 49.5414 32.4671 47.7344 32.9381 45.4492H34.7875C35.2608 47.7344 37.3385 49.5419 39.7817 49.5419C42.2249 49.5419 44.3035 47.7344 44.7769 45.4492H49.4802C49.9533 47.7344 52.0309 49.5409 54.4746 49.5409C56.9184 49.5409 58.9966 47.7344 59.4692 45.4492H63.4765C63.9673 45.4492 64.3652 44.9922 64.3652 44.5014V35.1069C64.3636 34.6772 64.277 34.2522 64.1103 33.8562C63.9437 33.4603 63.7002 33.1012 63.394 32.7999C63.0879 32.4985 62.725 32.2607 62.3265 32.1003C61.928 31.9399 61.5016 31.86 61.072 31.8652ZM9.49096 30.6375C9.95209 30.2368 10.4403 29.8684 10.9522 29.535C11.9341 28.9009 12.9805 28.3726 14.0738 27.9591L10.5751 33.1518L8.42824 31.6965C8.75885 31.3204 9.11399 30.9666 9.49134 30.6375H9.49096ZM7.36323 33.1221L9.58135 34.6258L6.66143 38.9586L4.43061 37.4463L7.36323 33.1221ZM2.41459 40.5825C2.40439 40.4931 2.42655 40.403 2.47706 40.3286L3.43377 38.9175L5.66815 40.4323L2.86807 44.5859L2.41459 40.5825ZM12.6932 45.8174C12.4489 46.1778 12.0714 46.4263 11.6437 46.5084C11.2161 46.5905 10.7734 46.4993 10.413 46.255C10.1442 46.0728 9.93548 45.8149 9.81322 45.5141C9.69095 45.2132 9.66065 44.8829 9.72614 44.5648C9.79163 44.2468 9.94997 43.9552 10.1811 43.7272C10.4123 43.4991 10.7059 43.3447 11.0248 43.2835C11.3438 43.2223 11.6737 43.257 11.9728 43.3833C12.272 43.5096 12.527 43.7218 12.7056 43.993C12.8842 44.2642 12.9783 44.5823 12.9761 44.9071C12.9739 45.2318 12.8755 45.5486 12.6932 45.8174ZM12.3271 41.624C11.6439 41.4167 10.913 41.4285 10.2368 41.6577C9.56062 41.8869 8.97316 42.3219 8.55678 42.9019C8.1404 43.4819 7.91601 44.1776 7.91506 44.8916C7.91411 45.6055 8.13667 46.3018 8.55151 46.8829C8.3548 47.1439 8.08871 47.3444 7.78357 47.4614L7.77087 47.466C7.38591 47.6051 6.97352 47.6512 6.56733 47.6007C6.16114 47.5501 5.77266 47.4042 5.43354 47.175L3.94654 46.1668L11.0524 35.623L14.7127 38.1047L12.3271 41.624ZM22.6984 31.0054C22.454 31.3658 22.0765 31.6143 21.6489 31.6964C21.2212 31.7785 20.7785 31.6873 20.4181 31.443C20.1493 31.2608 19.9406 31.0029 19.8183 30.7021C19.6961 30.4012 19.6658 30.0709 19.7313 29.7528C19.7968 29.4348 19.9551 29.1433 20.1863 28.9152C20.4175 28.6871 20.7111 28.5327 21.03 28.4715C21.3489 28.4103 21.6788 28.4451 21.978 28.5714C22.2771 28.6977 22.5322 28.9098 22.7107 29.181C22.8893 29.4523 22.9835 29.7704 22.9813 30.0951C22.9791 30.4198 22.8806 30.7366 22.6984 31.0054ZM22.3629 26.822C21.6615 26.6017 20.9078 26.6134 20.2135 26.8553C19.5193 27.0972 18.9215 27.5565 18.5089 28.165C18.0963 28.7735 17.8909 29.4987 17.923 30.2332C17.9552 30.9677 18.2232 31.6722 18.6874 32.2423L15.7101 36.6336L12.0456 34.1491L16.9394 26.8874C17.7624 25.6789 18.7824 24.6172 19.957 23.7466C20.2182 23.5532 20.5334 23.4467 20.8583 23.4419C21.1859 23.4356 21.5073 23.5316 21.7779 23.7164L23.6203 24.9656L22.3629 26.822ZM38.359 30.0466C38.4046 29.9247 38.4232 29.7943 38.4135 29.6645C38.4039 29.5346 38.3662 29.4084 38.3031 29.2946L31.5806 17.3037L40.7519 30.0108V36.3086H36.0012L38.359 30.0466ZM22.9061 43.6719H18.916V40.8789H24.1989C23.5053 41.6643 23.0561 42.6349 22.9061 43.6719ZM31.2614 44.4625C31.2411 45.3298 30.882 46.1547 30.261 46.7606C29.6401 47.3664 28.8067 47.7051 27.9391 47.7041C27.0716 47.7031 26.2389 47.3624 25.6194 46.7551C24.9999 46.1478 24.6427 45.3221 24.6244 44.4548C24.6236 44.4318 24.6244 44.4082 24.6244 44.3852C24.6239 43.549 24.9396 42.7435 25.5081 42.1303L25.5208 42.1176C25.5268 42.1116 25.5326 42.1049 25.5385 42.0994C25.7773 41.8464 26.0548 41.6329 26.3606 41.467C26.847 41.2037 27.3914 41.0659 27.9445 41.0662C28.3945 41.0656 28.84 41.157 29.2535 41.3346C29.667 41.5123 30.0398 41.7725 30.3492 42.0993C30.3551 42.1055 30.361 42.112 30.367 42.1176L30.3797 42.1303C30.9485 42.7432 31.2642 43.5488 31.2633 44.385C31.2622 44.4082 31.2623 44.4318 31.2614 44.4625ZM34.746 43.6719H32.98C32.8302 42.6349 32.381 41.6642 31.6874 40.8789H36.038C35.3498 41.6676 34.9015 42.6367 34.746 43.6719ZM43.164 44.4723C43.0371 46.2554 41.5987 47.7044 39.8133 47.7044C38.9446 47.6994 38.1117 47.3576 37.4898 46.751C36.8679 46.1444 36.5056 45.3202 36.4789 44.4519C36.478 44.4298 36.4704 44.4072 36.4704 44.3852C36.4694 43.7878 36.6299 43.2013 36.9349 42.6876C37.2398 42.1739 37.6779 41.7522 38.2028 41.467C38.6874 41.202 39.2313 41.064 39.7836 41.066C40.6234 41.0691 41.4317 41.3859 42.0499 41.9544C42.6681 42.5228 43.0514 43.3017 43.1248 44.1383C43.1302 44.2145 43.164 44.295 43.164 44.3846V44.4723ZM24.3749 39.1016V38.0859H43.7988V39.1016H24.3749ZM46.5917 43.6719H44.8187C44.6636 42.6369 44.2158 41.6679 43.5282 40.8789H46.5917V43.6719ZM53.0664 26.0254H59.7991C59.9337 26.0254 60.0629 26.0789 60.1581 26.1741C60.2534 26.2694 60.3069 26.3985 60.3069 26.5332C60.3069 26.6679 60.2534 26.797 60.1581 26.8923C60.0629 26.9875 59.9337 27.041 59.7991 27.041H53.0664V26.0254ZM53.0664 28.8184H57.6367V31.8652H54.6007C54.1917 31.8539 53.8031 31.6842 53.5168 31.3918C53.2306 31.0995 53.0691 30.7074 53.0664 30.2983V28.8184ZM48.3691 26.0254H51.289V30.2983C51.2982 31.0386 51.5523 31.7552 52.0116 32.3359C52.471 32.9167 53.1097 33.3289 53.8281 33.5084V35.8008H48.3691V26.0254ZM57.7932 44.4632C57.7731 45.3305 57.4143 46.1555 56.7935 46.7616C56.1727 47.3676 55.3393 47.7066 54.4718 47.7058C53.6042 47.7051 52.7714 47.3647 52.1517 46.7576C51.532 46.1504 51.1745 45.3248 51.156 44.4575C51.1552 44.4335 51.156 44.4088 51.156 44.3851C51.1559 43.5258 51.489 42.6999 52.0854 42.0812C52.6817 41.4625 53.4948 41.0992 54.3535 41.0677C55.2122 41.0363 56.0497 41.339 56.6898 41.9124C57.3299 42.4857 57.7226 43.285 57.7855 44.142C57.7914 44.2201 57.7943 44.3019 57.7943 44.3851C57.7937 44.4102 57.7938 44.4363 57.7932 44.4632ZM62.5878 43.6719H59.5111C59.3378 42.4633 58.7317 41.3588 57.8053 40.5635C56.879 39.7681 55.6955 39.3361 54.4746 39.3476C51.9268 39.3476 49.8097 41.1328 49.4365 43.6719H48.3691V40.0564C48.3691 40.0508 48.37 40.0455 48.37 40.0399C48.37 40.0343 48.3691 40.0283 48.3691 40.0232V37.5781H54.7576C54.8694 37.583 54.981 37.5648 55.0855 37.5246C55.1899 37.4843 55.2849 37.423 55.3645 37.3443C55.4441 37.2656 55.5066 37.1714 55.548 37.0674C55.5895 36.9635 55.609 36.8521 55.6054 36.7402V33.6426H61.072C61.2683 33.6371 61.4636 33.6708 61.6467 33.7418C61.8297 33.8129 61.9967 33.9197 62.1379 34.0561C62.2791 34.1926 62.3916 34.3558 62.4689 34.5363C62.5462 34.7168 62.5866 34.9109 62.5878 35.1072V43.6719Z" fill="currentColor"/>
+										&lt;/svg>
+										
+								&lt;/div>
+								&lt;h3 class="title">&lt;a href="service-details.html">Rapid Repair Garage&lt;/a>&lt;/h3>
+								&lt;p>Customer satisfaction is crucial for amohlodi &lt;br> business as it leads to customer&lt;/p>
+								&lt;a href="service-details.html" class="read-more">Read More &lt;i class="fa-sharp fa-regular fa-arrow-right">&lt;/i>&lt;/a>
+							&lt;/div>
+							&lt;div class="service-thumb">
+								&lt;img src="assets/img/service/service-1.jpg" alt="service">
+							&lt;/div>
+						&lt;/div>
+					&lt;/div>
+				&lt;/div>
+			&lt;/div>
+		&lt;/section>
+		&lt;!-- ./ service-section -->
+</pre>
+
+        <br>
+
+        <hr>
+
+        <h4 id="case-study"><strong>5) Goal Section</strong> - <a href="#toc">top</a></h4>
+        <br>
+        <pre class="brush: html;">
+			&lt;section class="goal-section bg-dark-1">
+			&lt;div class="container">
+				&lt;div class="row goal-wrap align-items-center">
+					&lt;div class="col-lg-6">
+						&lt;div class="goal-content pt-120 pb-120">
+							&lt;div class="section-heading heading-2 white-content wow fade-in-bottom" data-wow-delay="400ms">
+								&lt;h4 class="sub-heading">Our Goals&lt;/h4>
+								&lt;h2 class="section-title">Restoring functionality and one &lt;br>repair at a time&lt;/h2>
+								&lt;p>Car Repair Service is a vital industry that ensures the maintenance and repair of vehicles. With a team of skilled technicians, these services provide solutions for mechanical and electrical issues, body repairs, and routine maintenance&lt;/p>
+							&lt;/div>
+							&lt;div class="goal-item-wrap wow fade-in-bottom" data-wow-delay="600ms">
+								&lt;div class="goal-item">
+									&lt;div class="goal-icon">
+										&lt;svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+											&lt;g clip-path="url(#clip0_1_3555)">
+											&lt;path d="M33.2197 17.8125H33.9495C34.0945 17.8125 34.2336 17.7549 34.3362 17.6523C34.4387 17.5498 34.4964 17.4107 34.4964 17.2656C34.4964 17.1206 34.4387 16.9815 34.3362 16.8789C34.2336 16.7764 34.0945 16.7188 33.9495 16.7188H33.2197C33.0747 16.7188 32.9356 16.7764 32.833 16.8789C32.7305 16.9815 32.6729 17.1206 32.6729 17.2656C32.6729 17.4107 32.7305 17.5498 32.833 17.6523C32.9356 17.7549 33.0747 17.8125 33.2197 17.8125Z" fill="currentColor"/>
+											&lt;path d="M34.1073 18.75H33.2197C33.0747 18.75 32.9356 18.8076 32.833 18.9102C32.7305 19.0127 32.6729 19.1518 32.6729 19.2969C32.6729 19.4419 32.7305 19.581 32.833 19.6836C32.9356 19.7861 33.0747 19.8438 33.2197 19.8438H34.1073C34.2523 19.8438 34.3914 19.7861 34.494 19.6836C34.5966 19.581 34.6542 19.4419 34.6542 19.2969C34.6542 19.1518 34.5966 19.0127 34.494 18.9102C34.3914 18.8076 34.2523 18.75 34.1073 18.75Z" fill="currentColor"/>
+											&lt;path d="M34.1073 20.8594H33.2197C33.0747 20.8594 32.9356 20.917 32.833 21.0196C32.7305 21.1221 32.6729 21.2612 32.6729 21.4062C32.6729 21.5513 32.7305 21.6904 32.833 21.7929C32.9356 21.8955 33.0747 21.9531 33.2197 21.9531H34.1073C34.2523 21.9531 34.3914 21.8955 34.494 21.7929C34.5966 21.6904 34.6542 21.5513 34.6542 21.4062C34.6542 21.2612 34.5966 21.1221 34.494 21.0196C34.3914 20.917 34.2523 20.8594 34.1073 20.8594Z" fill="currentColor"/>
+											&lt;path d="M25.8594 18.6382C25.7143 18.6382 25.5752 18.6958 25.4727 18.7984C25.3701 18.9009 25.3125 19.04 25.3125 19.1851V23.274C25.3125 23.4191 25.3701 23.5582 25.4727 23.6607C25.5752 23.7633 25.7143 23.8209 25.8594 23.8209C26.0044 23.8209 26.1435 23.7633 26.2461 23.6607C26.3486 23.5582 26.4062 23.4191 26.4062 23.274V19.1851C26.4062 19.04 26.3486 18.9009 26.2461 18.7984C26.1435 18.6958 26.0044 18.6382 25.8594 18.6382Z" fill="currentColor"/>
+											&lt;path d="M24.375 18.6382C24.23 18.6382 24.0909 18.6958 23.9883 18.7984C23.8857 18.9009 23.8281 19.04 23.8281 19.1851V23.274C23.8281 23.4191 23.8857 23.5582 23.9883 23.6607C24.0909 23.7633 24.23 23.8209 24.375 23.8209C24.52 23.8209 24.6591 23.7633 24.7617 23.6607C24.8643 23.5582 24.9219 23.4191 24.9219 23.274V19.1851C24.9219 19.04 24.8643 18.9009 24.7617 18.7984C24.6591 18.6958 24.52 18.6382 24.375 18.6382Z" fill="currentColor"/>
+											&lt;path d="M28.0939 14.4533C28.0939 14.1235 27.9636 13.8071 27.7313 13.573C27.4991 13.3388 27.1837 13.206 26.854 13.2033H26.3282V5.46426L26.8459 4.4116C26.9039 4.29602 26.9194 4.16367 26.8894 4.03785L26.2004 1.40871C26.1699 1.29371 26.1015 1.19236 26.0062 1.12106C25.911 1.04976 25.7945 1.01268 25.6755 1.01582H24.5667C24.4472 1.01259 24.3302 1.04956 24.2342 1.1208C24.1383 1.19204 24.0691 1.29343 24.0376 1.40871L23.3446 4.04551C23.3162 4.17059 23.3331 4.3017 23.3925 4.41543L23.9064 5.46426V13.2033H23.3885C23.1065 13.2051 22.8334 13.3024 22.6137 13.4793C22.394 13.6561 22.2408 13.9022 22.1789 14.1774C22.117 14.4525 22.1501 14.7405 22.2728 14.9944C22.3956 15.2483 22.6007 15.4532 22.8548 15.5756L22.208 17.8307C22.1942 17.8808 22.1873 17.9326 22.1876 17.9846V23.8908C22.1876 25.133 23.1965 26.1728 24.4387 26.1728H25.8035C27.0457 26.1728 28.047 25.133 28.047 23.8908V17.9846C28.0486 17.9337 28.043 17.8828 28.0304 17.8335L27.385 15.5757C27.5967 15.474 27.7754 15.3148 27.9008 15.1164C28.0261 14.9179 28.093 14.6881 28.0939 14.4533ZM24.9887 2.10957H25.2535L25.7892 4.13715L25.304 5.11332C25.264 5.18293 25.2403 5.26067 25.2345 5.34074V13.2033H25.0001V5.34074C24.9957 5.2585 24.9733 5.17824 24.9343 5.10566L24.4596 4.13691L24.9887 2.10957ZM26.9532 23.8901C26.9532 24.5293 26.4425 25.0783 25.8035 25.0783H24.4387C23.7996 25.0783 23.2814 24.5293 23.2814 23.8901V18.0614L23.9577 15.7033H26.2845L26.9532 18.0614V23.8901ZM26.8537 14.6096H23.3885C23.347 14.6096 23.3073 14.5931 23.278 14.5638C23.2487 14.5345 23.2322 14.4948 23.2322 14.4533C23.2322 14.4119 23.2487 14.3721 23.278 14.3428C23.3073 14.3135 23.347 14.2971 23.3885 14.2971H26.8537C26.8952 14.2971 26.9349 14.3135 26.9642 14.3428C26.9935 14.3721 27.01 14.4119 27.01 14.4533C27.01 14.4948 26.9935 14.5345 26.9642 14.5638C26.9349 14.5931 26.8952 14.6096 26.8537 14.6096Z" fill="currentColor"/>
+											&lt;path d="M36.0545 1.01697C35.9686 0.975193 35.8735 0.955514 35.778 0.959716C35.6825 0.963917 35.5896 0.991866 35.5076 1.04103C35.4267 1.08934 35.3591 1.15729 35.3114 1.23859C35.2636 1.31989 35.237 1.41192 35.2342 1.50619V3.97345L33.6697 5.02502L32.0557 3.89064L32.0675 1.50509C32.0683 1.41186 32.0452 1.31999 32.0003 1.23825C31.9554 1.15652 31.8903 1.08767 31.8113 1.03828C31.7322 0.988895 31.6418 0.960628 31.5486 0.956185C31.4555 0.951743 31.3628 0.971273 31.2794 1.01291C30.3714 1.46084 29.6088 2.15672 29.0799 3.02002C28.5509 3.88332 28.2772 4.87875 28.2905 5.89112C28.3038 6.90349 28.6034 7.89141 29.1548 8.74057C29.7061 9.58972 30.4867 10.2654 31.4061 10.6894V23.9113C31.4061 24.5019 31.6407 25.0682 32.0582 25.4858C32.4758 25.9033 33.0421 26.1379 33.6326 26.1379C34.2232 26.1379 34.7895 25.9033 35.2071 25.4858C35.6246 25.0682 35.8592 24.5019 35.8592 23.9113V10.6894C36.8013 10.2715 37.6008 9.58767 38.1597 8.7218C38.7186 7.85593 39.0125 6.84572 39.0054 5.81517C39.0121 4.81932 38.7391 3.8416 38.2174 2.99331C37.6957 2.14502 36.9463 1.46025 36.0545 1.01697ZM35.1389 9.81252C35.0324 9.85059 34.9399 9.9198 34.8733 10.0112C34.8067 10.1025 34.7691 10.2118 34.7655 10.3248V23.9113C34.7655 24.2118 34.6461 24.4999 34.4337 24.7124C34.2212 24.9248 33.9331 25.0442 33.6326 25.0442C33.3322 25.0442 33.0441 24.9248 32.8316 24.7124C32.6192 24.4999 32.4998 24.2118 32.4998 23.9113V10.3248C32.5025 10.2145 32.471 10.1061 32.4097 10.0144C32.3484 9.92271 32.2603 9.85219 32.1573 9.81252C31.4539 9.54792 30.8328 9.10233 30.3567 8.52077C29.8807 7.93921 29.5666 7.24229 29.4462 6.50045C29.3258 5.7586 29.4034 4.99812 29.6711 4.29586C29.9387 3.5936 30.387 2.97444 30.9707 2.50095L30.9666 4.17283C30.9665 4.26118 30.9877 4.34825 31.0286 4.42661C31.0694 4.50497 31.1285 4.57229 31.201 4.62283L33.3626 6.13517C33.4528 6.19837 33.56 6.23285 33.6701 6.23412C33.7803 6.23539 33.8882 6.20338 33.9798 6.14228L36.099 4.72158C36.1721 4.67079 36.2313 4.60254 36.2713 4.52304C36.3113 4.44353 36.3307 4.3553 36.328 4.26634V2.50424C36.8265 2.89885 37.228 3.40248 37.5015 3.97643C37.7751 4.55038 37.9135 5.1794 37.9061 5.81517C37.9048 6.68351 37.6394 7.53091 37.1451 8.24487C36.6509 8.95883 35.9512 9.50557 35.1389 9.81252Z" fill="currentColor"/>
+											&lt;path d="M16.0938 34.9814C16.2388 34.9814 16.3779 34.9238 16.4804 34.8213C16.583 34.7187 16.6406 34.5796 16.6406 34.4346V33.9658C16.6406 33.8208 16.583 33.6817 16.4804 33.5791C16.3779 33.4766 16.2388 33.4189 16.0938 33.4189C15.9487 33.4189 15.8096 33.4766 15.7071 33.5791C15.6045 33.6817 15.5469 33.8208 15.5469 33.9658V34.4346C15.5469 34.5796 15.6045 34.7187 15.7071 34.8213C15.8096 34.9238 15.9487 34.9814 16.0938 34.9814Z" fill="currentColor"/>
+											&lt;path d="M5.625 34.9814C5.77004 34.9814 5.90914 34.9238 6.0117 34.8213C6.11426 34.7187 6.17188 34.5796 6.17188 34.4346V33.9658C6.17188 33.8208 6.11426 33.6817 6.0117 33.5791C5.90914 33.4766 5.77004 33.4189 5.625 33.4189C5.47996 33.4189 5.34086 33.4766 5.2383 33.5791C5.13574 33.6817 5.07813 33.8208 5.07812 33.9658V34.4346C5.07812 34.5796 5.13574 34.7187 5.2383 34.8213C5.34086 34.9238 5.47996 34.9814 5.625 34.9814Z" fill="currentColor"/>
+											&lt;path d="M10.0679 7.8125H11.9094C12.0544 7.8125 12.1935 7.75488 12.2961 7.65232C12.3986 7.54976 12.4562 7.41067 12.4562 7.26562C12.4562 7.12058 12.3986 6.98149 12.2961 6.87893C12.1935 6.77637 12.0544 6.71875 11.9094 6.71875H10.0679C9.92283 6.71875 9.78373 6.77637 9.68117 6.87893C9.57861 6.98149 9.521 7.12058 9.521 7.26562C9.521 7.41067 9.57861 7.54976 9.68117 7.65232C9.78373 7.75488 9.92283 7.8125 10.0679 7.8125Z" fill="currentColor"/>
+											&lt;path d="M10.0679 6.17188H11.9094C12.0544 6.17188 12.1935 6.11426 12.2961 6.0117C12.3986 5.90914 12.4562 5.77004 12.4562 5.625C12.4562 5.47996 12.3986 5.34086 12.2961 5.2383C12.1935 5.13574 12.0544 5.07812 11.9094 5.07812H10.0679C9.92283 5.07812 9.78373 5.13574 9.68117 5.2383C9.57861 5.34086 9.521 5.47996 9.521 5.625C9.521 5.77004 9.57861 5.90914 9.68117 6.0117C9.78373 6.11426 9.92283 6.17188 10.0679 6.17188Z" fill="currentColor"/>
+											&lt;path d="M20.7813 38.4876V32.7493C20.7813 32.7342 20.8002 32.7191 20.799 32.704C20.7386 31.9859 20.4955 31.2953 20.0927 30.6978C19.6899 30.1004 19.1408 29.616 18.4978 29.2908C18.488 29.2858 18.4817 29.2812 18.4716 29.2768L14.5313 27.594V25.249C16.6407 24.0361 18.1377 21.797 18.2773 19.2086C18.793 19.0042 19.2174 18.6202 19.4721 18.1274C19.7269 17.6347 19.7948 17.0664 19.6634 16.5275C19.5945 16.2353 19.4562 15.964 19.2602 15.7366C19.0642 15.5092 18.8163 15.3324 18.5375 15.2211L18.5844 14.5315H19.4923C19.5603 14.5344 19.6281 14.523 19.6915 14.4981C19.7548 14.4732 19.8123 14.4354 19.8601 14.3869C19.908 14.3385 19.9451 14.2806 19.9692 14.2169C19.9933 14.1533 20.0038 14.0853 20.0001 14.0173V12.0315C20.0001 11.7294 19.7943 11.4846 19.4923 11.4846H18.9907C18.8975 9.73973 18.3005 8.05931 17.272 6.64677C16.2872 5.30349 14.9144 4.29425 13.3386 3.75497L13.3919 3.2413C13.3998 3.16655 13.3915 3.09097 13.3678 3.01966C13.344 2.94835 13.3053 2.88295 13.2541 2.82786C13.2024 2.77227 13.1394 2.72826 13.0693 2.69872C12.9993 2.66918 12.9239 2.65478 12.8479 2.65645H8.94867C8.87272 2.65435 8.79719 2.66853 8.72718 2.69805C8.65716 2.72756 8.59428 2.77172 8.54275 2.82756C8.49122 2.88341 8.45225 2.94963 8.42845 3.02179C8.40465 3.09395 8.39657 3.17037 8.40477 3.24591L8.45805 3.75731C6.88118 4.29778 5.5082 5.30925 4.52461 6.65505C3.49863 8.06572 2.90223 9.74286 2.80719 11.4846H2.30477C2.00273 11.4846 1.71883 11.7293 1.71883 12.0315V14.0174C1.71883 14.3194 2.00273 14.5315 2.30477 14.5315H3.17844L3.22469 15.219C2.94507 15.3281 2.69609 15.5033 2.49912 15.7298C2.30215 15.9562 2.16307 16.2271 2.09383 16.5191C2.05008 16.6995 2.028 16.8845 2.02805 17.0702C2.02749 17.5317 2.1662 17.9827 2.42604 18.3641C2.68588 18.7455 3.05476 19.0397 3.48445 19.2081C3.54624 20.4568 3.92602 21.669 4.58779 22.7297C5.24955 23.7904 6.17133 24.6644 7.2657 25.2689V27.594L3.32039 29.2768C3.31031 29.2812 3.29969 29.2858 3.28992 29.2908C2.64329 29.6146 2.08991 30.098 1.68208 30.6952C1.27426 31.2924 1.02547 31.9838 0.959219 32.704C0.957969 32.7191 0.9375 32.7342 0.9375 32.7493V38.4876C0.945206 38.6395 1.00974 38.783 1.1183 38.8895C1.22685 38.996 1.3715 39.0579 1.52352 39.0627H20.2735C20.5755 39.0627 20.7813 38.7897 20.7813 38.4876ZM15.8595 29.3653L16.3282 29.5654V32.1877H15.8595V29.3653ZM8.2032 5.02763C8.52098 4.88354 8.85025 4.76628 9.18758 4.67708C9.31294 4.64577 9.42281 4.57032 9.49705 4.46456C9.57129 4.35881 9.60493 4.22984 9.5918 4.1013L9.55555 3.7502H12.2415L12.2041 4.1013C12.1911 4.23049 12.2247 4.36009 12.299 4.46657C12.3734 4.57306 12.4834 4.64938 12.6091 4.68169C12.9464 4.76928 13.2758 4.88481 13.5938 5.02708V5.70614C13.593 6.53383 13.3432 7.34214 12.8769 8.02595C12.4105 8.70976 11.7492 9.23743 10.979 9.54036C10.1682 9.2617 9.46469 8.73658 8.96699 8.03844C8.46929 7.34031 8.20225 6.50407 8.2032 5.64669V5.02763ZM5.40273 7.30395C5.88175 6.66501 6.45759 6.10478 7.10945 5.64349V5.64669C7.10778 6.74798 7.45564 7.8214 8.10294 8.71238C8.75024 9.60337 9.66359 10.266 10.7115 10.6047L10.8186 10.6394C10.8734 10.6572 10.9307 10.6663 10.9884 10.6663C11.0495 10.6663 11.1102 10.6563 11.168 10.6366C12.1949 10.2833 13.0859 9.61838 13.7168 8.73455C14.3477 7.85072 14.687 6.79205 14.6876 5.70614V5.64145C15.3393 6.10139 15.9153 6.6602 16.3947 7.2977C17.2836 8.52181 17.8043 9.97447 17.8952 11.4846H3.90258C3.99552 9.97686 4.51586 8.52678 5.40273 7.30395ZM2.81258 13.4377V12.5783H18.9063V13.4377H16.4063C16.3055 13.4377 16.1895 13.3718 16.0715 13.394C16.0246 13.4029 15.9802 13.4377 15.9387 13.4377H2.81258ZM17.4877 14.5315L17.4186 15.5508C17.416 15.5928 17.3985 15.6326 17.3691 15.6629L17.2537 15.7747L17.0395 15.1179C16.9714 14.9259 16.9145 14.7301 16.8693 14.5315H17.4877ZM4.72211 14.5315L4.6325 15.6684L4.35164 15.5326C4.34539 15.5294 4.34125 15.5108 4.3407 15.5039L4.27477 14.5315H4.72211ZM4.53133 18.8049V18.7945C4.53513 18.6675 4.49334 18.5433 4.4135 18.4444C4.33367 18.3455 4.22107 18.2785 4.09609 18.2554C3.81909 18.2065 3.56837 18.0611 3.38845 17.8448C3.20854 17.6286 3.11107 17.3556 3.11336 17.0743C3.11472 16.9775 3.1277 16.8813 3.15203 16.7875C3.17676 16.6797 3.22526 16.5787 3.29401 16.492C3.36275 16.4053 3.45 16.335 3.54938 16.2864C3.63624 16.3789 3.73831 16.4558 3.85117 16.5138L4.67391 16.9357C4.77464 16.9875 4.88661 17.0135 4.99986 17.0116C5.11311 17.0097 5.22413 16.9798 5.32305 16.9247C5.42262 16.8662 5.50655 16.7845 5.56764 16.6866C5.62874 16.5886 5.66517 16.4773 5.67383 16.3622L5.81898 14.5315H15.7423C15.8159 14.844 15.9018 15.165 16.002 15.4658L16.4161 16.7165C16.4514 16.8266 16.514 16.9259 16.598 17.0054C16.682 17.0848 16.7846 17.1417 16.8965 17.1709C17.0084 17.2001 17.1258 17.2005 17.2378 17.1722C17.3499 17.1438 17.453 17.0877 17.5376 17.0089L18.1157 16.4698C18.1669 16.4218 18.2139 16.3695 18.2563 16.3136C18.3431 16.3649 18.4184 16.4334 18.4778 16.5148C18.5371 16.5963 18.5792 16.689 18.6015 16.7873C18.6405 16.9469 18.6464 17.1129 18.6187 17.2749C18.591 17.4369 18.5304 17.5915 18.4406 17.7291C18.3508 17.8667 18.2337 17.9844 18.0965 18.075C17.9594 18.1655 17.8051 18.227 17.6433 18.2555C17.5163 18.2777 17.4011 18.3438 17.3178 18.4422C17.2345 18.5407 17.1884 18.6652 17.1876 18.7942V18.8052C17.1876 22.2875 14.3416 25.1205 10.8599 25.1205C7.3782 25.1205 4.53133 22.2875 4.53133 18.8049ZM13.4376 25.758V27.6183C12.6349 27.9609 11.7712 28.1375 10.8985 28.1375C10.0258 28.1375 9.16211 27.9609 8.35945 27.6183V25.771C10.0006 26.3664 11.7995 26.3619 13.4376 25.7582V25.758ZM6.9532 28.8986L7.76477 28.5606C8.74676 29.0031 9.81166 29.2316 10.8888 29.2309C11.958 29.2315 13.0149 29.003 13.9884 28.5606L14.7657 28.8986V32.1877H6.9532V28.8986ZM5.3907 29.5654L5.85945 29.3654V32.1877H5.3907V29.5654ZM4.29695 32.1877H4.10164C3.79961 32.1877 3.5157 32.4143 3.5157 32.7161V37.969H2.03133V32.773C2.18758 31.7115 2.77437 30.7574 3.72539 30.2761L4.29695 30.0322V32.1877ZM17.1095 37.969H4.60945V33.2815H17.1095V37.969ZM19.6876 37.969H18.2032V32.7161C18.2032 32.414 17.9974 32.1877 17.6954 32.1877H17.422V30.0322L17.9935 30.2761C18.4656 30.513 18.8692 30.8668 19.1657 31.3039C19.4623 31.741 19.6419 32.2468 19.6876 32.773V37.969Z" fill="currentColor"/>
+											&lt;/g>
+											&lt;defs>
+											&lt;clipPath id="clip0_1_3555">
+											&lt;rect width="40" height="40" fill="currentColor"/>
+											&lt;/clipPath>
+											&lt;/defs>
+										&lt;/svg>
+									&lt;/div>
+									&lt;div class="goal-info">
+										&lt;h3 class="title">AI Innovations&lt;/h3>
+										&lt;p>There are m variations &lt;br> of pass available&lt;/p>
+									&lt;/div>
+								&lt;/div>
+							&lt;/div>
+							&lt;div class="goal-btn-wrap wow fade-in-bottom" data-wow-delay="800ms">
+								&lt;a href="about.html" class="rr-primary-btn">Know More &lt;i class="fa-sharp fa-regular fa-arrow-right">&lt;/i>&lt;/a>
+								&lt;div class="goal-contact">
+									&lt;div class="contact-icon">&lt;i class="fa-sharp fa-solid fa-phone">&lt;/i>&lt;/div>
+									&lt;h4 class="number">&lt;span>Help Desk 24/7&lt;/span>&lt;a href="tel:000232439493">000 2324 39493&lt;/a>&lt;/h4>
+								&lt;/div>
+							&lt;/div>
+						&lt;/div>
+					&lt;/div>
+					&lt;div class="col-lg-6">
+						&lt;div class="goal-img">
+							&lt;div class="bg-shape">&lt;img src="assets/img/shapes/goal-shape.png" alt="shape">&lt;/div>
+							&lt;img src="assets/img/images/goal-img.png" alt="img">
+						&lt;/div>
+					&lt;/div>
+				&lt;/div>
+			&lt;/div>
+		&lt;/section>
+		&lt;!-- ./ goal-section -->
+</pre>
+
+        <br>
+
+        <hr>
+
+        <h4 id="consult"><strong>6) Subscribe Section</strong> - <a href="#toc">top</a></h4>
+        <br>
+        <pre class="brush: html;">
+		&lt;section class="subscribe-section">
+			&lt;div class="bg-color">&lt;/div>
+			&lt;div class="container">
+				&lt;div class="row subscribe-wrap align-items-center wow fade-in-bottom" data-wow-delay="400ms">
+					&lt;div class="shape">&lt;/div>
+					&lt;div class="col-md-4">
+						&lt;div class="subscribe-man">
+							&lt;img src="assets/img/images/subscribe-men.png" alt="men">
+						&lt;/div>
+					&lt;/div>
+					&lt;div class="col-md-8">
+						&lt;div class="subscribe-content">
+							&lt;div class="section-heading heading-2">
+								&lt;h2 class="section-title">Subscribe to Our &lt;br> Newsletter&lt;/h2>
+							&lt;/div>
+							&lt;div class="subscribe-form">
+								&lt;form action="#" class="rr-subscribe-form">
+									&lt;input class="form-control" type="email" name="email" placeholder="Enter Your Email" required="">
+									&lt;input type="hidden" name="action" value="mailchimpsubscribe">
+									&lt;button class="rr-primary-btn submit">Subscribe &lt;i class="fa-sharp fa-regular fa-arrow-right">&lt;/i>&lt;/button>
+									&lt;div class="clearfix">&lt;/div>
+								&lt;/form>
+							&lt;/div>
+						&lt;/div>
+					&lt;/div>
+				&lt;/div>
+			&lt;/div>
+		&lt;/section>
+		&lt;!-- ./ subscribe-section -->
+</pre>
+
+        <br>
+
+        <hr>
+
+        <h4 id="testimonial"><strong>7) Team Section</strong> - <a href="#toc">top</a></h4>
+        <br>
+        <pre class="brush: html;">
+		&lt;section class="team-section pt-120 pb-120">
+			&lt;div class="container">
+				&lt;div class="team-top heading-space">
+					&lt;div class="section-heading mb-0 wow fade-in-left" data-wow-delay="400ms">
+						&lt;h4 class="sub-heading">Our Team Member&lt;/h4>
+						&lt;h2 class="section-title">Repair with precision and &lt;br> expertise best&lt;/h2>
+					&lt;/div>
+					&lt;p class="mb-0 wow fade-in-right" data-wow-delay="400ms">Lorem ipsum dolor sit amet consectetur. Tortor sed vel ipsum id amet molestie.they &lt;br> diam velit elit viverra. Malesuada blandit in habitasse malesuada &lt;/p>
+				&lt;/div>
+				&lt;div class="row gy-lg-0 gy-4 justify-content-center">
+					&lt;div class="col-lg-4 col-md-6">
+						&lt;div class="team-item wow fade-in-bottom" data-wow-delay="400ms">
+							&lt;div class="team-thumb">
+								&lt;img src="assets/img/team/team-1.jpg" alt="team">
+							&lt;/div>
+							&lt;div class="team-content">
+								&lt;div class="team-author">
+									&lt;h3 class="title">&lt;a href="team-details.html">Cameron Williamson&lt;/a>&lt;/h3>
+									&lt;span>Nursing Assistant&lt;/span>
+								&lt;/div>
+								&lt;div class="team-social">
+									&lt;div class="expand">
+										&lt;i class="fa-solid fa-share-nodes">&lt;/i>
+									&lt;/div>
+									&lt;ul class="social-list">
+										&lt;li>&lt;a href="#" class="facebook">&lt;i class="fab fa-facebook-f">&lt;/i>&lt;/a>&lt;/li>
+									&lt;/ul>
+								&lt;/div>
+							&lt;/div>
+						&lt;/div>
+					&lt;/div>
+				&lt;/div>
+			&lt;/div>
+		&lt;/section>
+		&lt;!-- ./ team-section -->
+</pre>
+
+        <br>
+
+        <hr>
+
+        <h4 id="blog"><strong>8) Testimonial Section</strong> - <a href="#toc">top</a></h4>
+        <br>
+        <pre class="brush: html;">
+		&lt;section class="testimonial-section bg-grey pt-120">
+			&lt;div class="testi-shape">&lt;img src="assets/img/shapes/road.png" alt="shape">&lt;/div>
+			&lt;div class="container">
+				&lt;div class="row testi-wrap">
+					&lt;div class="col-lg-6">
+						&lt;div class="testi-img">
+							&lt;div class="testi-men">
+								&lt;img src="assets/img/images/testi-men.png" alt="men">
+							&lt;/div>
+						&lt;/div>
+					&lt;/div>
+					&lt;div class="col-lg-6">
+						&lt;div class="testi-content-wrap">
+							&lt;div class="section-heading heading-2">
+								&lt;h4 class="sub-heading">Clients Testimonial&lt;/h4>
+								&lt;h2 class="section-title mb-0">Restoration experts at your the &lt;br> best service&lt;/h2>
+							&lt;/div>
+							&lt;div class="testi-carousel swiper">
+								&lt;div class="swiper-wrapper">
+									&lt;div class="swiper-slide">
+										&lt;div class="testi-item bg-white">
+											&lt;div class="quote">&lt;img src="assets/img/icon/quote.png" alt="quote">&lt;/div>
+											&lt;div class="testi-thumb">&lt;img src="assets/img/images/testi-thumb-1.png" alt="testi">&lt;/div>
+											&lt;div class="testi-content">
+												&lt;h3 class="title">Cameron Williamson&lt;/h3>
+												&lt;ul class="reviews">
+													&lt;li>&lt;i class="fas fa-star">&lt;/i>&lt;/li>
+												&lt;/ul>
+												&lt;p>Medical is a field that deals with the study, diagnosis treatment diseases and injuries. It encompasses various branches such as cardiolog,the a  neurology orthopedics, and more professionals work diligently&lt;/p>
+											&lt;/div>
+										&lt;/div>
+									&lt;/div>
+								&lt;/div>
+								&lt;!-- Carousel Dots -->
+								&lt;div class="swiper-pagination">&lt;/div>
+							&lt;/div>
+						&lt;/div>
+					&lt;/div>
+				&lt;/div>
+			&lt;/div>
+		&lt;/section>
+		&lt;!-- ./ testimonial-section -->
+</pre>
+
+        <hr>
+
+        <h4 id="sponsor"><strong>10) Counter Section </strong> - <a href="#toc">top</a></h4>
+        <br>
+        <pre class="brush: html;">
+		&lt;section class="counter-section counter-1 bg-dark-1 pt-120 pb-120">
+			&lt;div class="container">
+				&lt;div class="row gy-lg-0 gy-4">
+					&lt;div class="col-lg-3 col-md-6">
+						&lt;div class="counter-item text-center wow fade-in-bottom" data-wow-delay="200ms">
+							&lt;div class="counter-icon">&lt;img src="assets/img/icon/counter-1.png" alt="counter">&lt;/div>
+							&lt;div class="counter-content">
+								&lt;h3 class="title">&lt;span class="odometer" data-count="200">0&lt;/span>+&lt;/h3>
+								&lt;p>Happy Clients&lt;/p>
+							&lt;/div>
+						&lt;/div>
+					&lt;/div>
+				&lt;/div>
+			&lt;/div>
+		&lt;/section>
+		&lt;!-- ./ counter-section -->
+</pre>
+
+        <hr>
+
+        <h4 id="widget"><strong>11) Booking Section</strong> - <a href="#toc">top</a></h4>
+        <br>
+        <pre class="brush: html;">
+		&lt;section class="booking-section pb-120">
+			&lt;div class="bg-color">&lt;/div>
+			&lt;div class="container">
+				&lt;div class="booking-wrap">
+					&lt;div class="booking-form">
+						&lt;div class="section-heading heading-2">
+							&lt;h4 class="sub-heading">Book Now&lt;/h4>
+							&lt;h2 class="section-title">Restoring your peace of &lt;br> the mind&lt;/h2>
+						&lt;/div>
+						&lt;form action="contact.php" method="post" id="ajax_contact" class="form-horizontal">
+							&lt;div class="form-group">
+								&lt;div class="form-item">
+									&lt;input type="text" id="fullname" name="fullname" class="form-control" placeholder="Name">
+								&lt;/div>
+								&lt;div class="submit-btn text-center">
+									&lt;button id="submit" class="rr-primary-btn" type="submit">Send Message &lt;i class="fa-sharp fa-regular fa-arrow-right">&lt;/i>&lt;/button>
+								&lt;/div>
+							&lt;/div>
+						&lt;/form>
+					&lt;/div>
+					&lt;div class="booking-img">
+						&lt;img src="assets/img/images/booking-img.jpg" alt="book">
+					&lt;/div>
+				&lt;/div>
+			&lt;/div>
+		&lt;/section>
+		&lt;!-- ./ booking-section -->
+</pre>
+
+        <hr>
+
+        <h4 id="widget"><strong>12) Blog Section</strong> - <a href="#toc">top</a></h4>
+        <br>
+        <pre class="brush: html;">
+		&lt;section class="pricing-section">
+			&lt;div class="container">
+				&lt;div class="section-heading text-center">
+					&lt;h4 class="sub-heading wow fade-in-bottom" data-wow-delay="200ms">Pricing Plan&lt;/h4>
+					&lt;h2 class="section-title wow fade-in-bottom" data-wow-delay="400ms">Restoring functionality one &lt;br> repair at a time&lt;/h2>
+				&lt;/div>
+				&lt;div class="row gy-lg-0 gy-4 justify-content-center">
+					&lt;div class="col-lg-4 col-md-6">
+						&lt;div class="pricing-item wow fade-in-bottom" data-wow-delay="200ms">
+							&lt;h3 class="pricing-category">Starter Plan&lt;/h3>
+							&lt;div class="pricing white-content">
+								&lt;img src="assets/img/icon/pricing-icon-1.png" alt="pricing">
+								&lt;h3 class="title">$19 &lt;span>/mo&lt;/span>&lt;/h3>
+							&lt;/div>
+							&lt;div class="pricing-content">
+								&lt;p>Repair is a specialized field that focuses fixing &lt;br>and restoring objects or systems&lt;/p>
+								&lt;ul class="pricing-list">
+									&lt;li>&lt;i class="fa-regular fa-chevrons-right">&lt;/i>Repairing your problems&lt;/li>
+								&lt;/ul>
+								&lt;a href="contact.html" class="rr-primary-btn pricing-btn transparent">Get Now &lt;i class="fa-sharp fa-regular fa-arrow-right">&lt;/i>&lt;/a>
+							&lt;/div>
+						&lt;/div>
+					&lt;/div>
+				&lt;/div>
+			&lt;/div>
+		&lt;/section>
+		&lt;!-- ./ pricing-section -->
+</pre>
+
+        <hr>
+
+        <h4 id="widget"><strong>13) Blog Section</strong> - <a href="#toc">top</a></h4>
+        <br>
+        <pre class="brush: html;">
+			&lt;section class="blog-section pt-120 pb-120">
+			&lt;div class="container">
+				&lt;div class="section-heading text-center">
+					&lt;h4 class="sub-heading wow fade-in-bottom" data-wow-delay="200ms">Our Blogs&lt;/h4>
+					&lt;h2 class="section-title wow fade-in-bottom" data-wow-delay="400ms">Say goodbye to AC problems with our &lt;br>professional repair services&lt;/h2>
+				&lt;/div>
+				&lt;div class="row gy-lg-0 gy-4 justify-content-center">
+					&lt;div class="col-lg-4 col-md-6">
+						&lt;div class="post-card wow fade-in-bottom" data-wow-delay="200ms">
+							&lt;div class="post-thumb">
+								&lt;img src="assets/img/blog/post-1.jpg" alt="post">
+								&lt;h4 class="category">Oct 19&lt;/h4>
+							&lt;/div>
+							&lt;div class="post-content-wrap">
+								&lt;ul class="post-meta">
+									&lt;li>&lt;i class="fa-regular fa-user">&lt;/i>By &lt;a href="#">Admin&lt;/a>&lt;/li>
+									&lt;li>&lt;i class="fa-regular fa-messages">&lt;/i>Comments (02)&lt;/li>
+								&lt;/ul>
+								&lt;div class="post-content">
+									&lt;h3 class="title">
+										&lt;a href="blog-details.html"
+											>Get back to comfort with our  AC repair solutions&lt;/a
+										>
+									&lt;/h3>
+									&lt;p class="desc">
+										Medical is a field that de with the study, diagnosis, and treatment diseases loren dummy
+									&lt;/p>
+									&lt;a href="blog-details.html" class="read-more">Read More &lt;i class="fa-sharp fa-regular fa-arrow-right">&lt;/i>&lt;/a>
+								&lt;/div>
+							&lt;/div>
+						&lt;/div>
+					&lt;/div>
+				&lt;/div>
+			&lt;/div>
+		&lt;/section>
+		&lt;!-- ./ blog-section -->
+</pre>
+
+        
+        <hr>
+
+        <h4 id="widget"><strong>14) Footer Section</strong> - <a href="#toc">top</a></h4>
+        <br>
+        <pre class="brush: html;">
+		&lt;footer class="footer-section bg-dark-1">
+			&lt;div class="shape">&lt;img src="assets/img/shapes/footer-shape.png" alt="footer">&lt;/div>
+			&lt;div class="container">
+				&lt;div class="footer-top">
+					&lt;div class="footer-logo">
+						&lt;a href="index.html">&lt;img src="assets/img/logo/logo-2.png" alt="logo">&lt;/a>
+					&lt;/div>
+					&lt;ul class="social-list">
+						&lt;li class="facebook">
+							&lt;a href="#">&lt;i class="fab fa-facebook-f">&lt;/i>&lt;/a>
+						&lt;/li>
+					&lt;/ul>
+				&lt;/div>
+				&lt;div class="row footer-wrap">
+					&lt;div class="col-lg-3 col-md-6">
+						&lt;div class="footer-widget">
+							&lt;h3 class="widget-header">About Us&lt;/h3>
+							&lt;p>Yes, there are many notable ma corporate &lt;br> businesses Informati worldwide, such as &lt;br> Google the man design ever&lt;/p>
+						&lt;/div>
+					&lt;/div>
+				&lt;/div>
+			&lt;/div>
+			&lt;div class="copyright-area">
+				&lt;div class="container">
+					&lt;div class="copyright-content">
+						&lt;p>© PixFix  2024 | All Rights Reserved&lt;/p>
+						&lt;ul class="copy-list">
+							&lt;li>&lt;a href="contact.html">Trams & Condition&lt;/a>&lt;/li>
+						&lt;/ul>
+					&lt;/div>
+				&lt;/div>
+			&lt;/div>
+		&lt;/footer>
+		&lt;!-- ./ footer-section -->
+</pre>
+
+        <br>
+
+        <p>&nbsp;</p>
+
+        <hr>
+        <h3 id="cssFiles"><strong>C) CSS Files and Structure</strong> - <a href="#toc">top</a></h3>
+        <p>These are the css files:</p>
+        <ol>
+            <li>bootstrap.min.css</li>
+            <li>animate.min.css</li>
+            <li>fontawesome.min.css</li>
+            <li>keyframe-animation.css</li>
+            <li>odometer.min.css</li>
+            <li>swiper.min.css</li>
+            <li>slider.css</li>
+            <li>venobox.min.css</li>
+            <li>spotlight.css</li>
+            <li>main.css </li>
+            <li>responsive.css</li>
+        </ol>
+
+
+        <p>&nbsp;</p>
+        <hr>
+
+        <h3 id="javascript"><strong>D) JavaScript</strong> - <a href="#toc">top</a></h3>
+
+        <p>This template use these Javascript files:</p>
+
+        <ol>
+            <li>jQuery<br>
+                jQuery is a Javascript library that greatly reduces the amount of code that you must write. jQuery use these javascript files:
+                <pre>
+                
+		    modernizr-2.8.3-respond-1.4.2.min.js
+				jquary-3.6.0.min.js
+                jquery.ajaxchimp.min.js
+                bootstrap.min.js
+                popper.min.js
+                odometer.min.js
+                waypoints.min.js
+                venobox.min.js
+                masonry-docs.min.js
+                swiper.min.js
+                imagesloaded.pkgd.min.js
+                jquery.isotope.v3.0.2.js
+                vendor/wow.min.js
+                contact.js
+                slider.js
+                main.js
+            </pre>
+                You can edit the contact.js files. for setting contact form
+                <br>
+                <br>
+            </li>
+        </ol>
+
+        <hr>
+
+        <h3 id="credits"><strong>F) Sources and Credits</strong> - <a href="#toc">top</a></h3>
+        <ol>
+            <li><a href="http://getbootstrap.com">Bootstrap v5.0.2</a></li>
+            <li><a href="https://kenwheeler.github.io/swiper/" target="_blank">Swiper Carousel</a></li>
+            <li><a href="https://wowjs.uk/" target="_blank">WOW JS</a></li>
+            <li><a href="http://veno.es/venobox/" target="_blank">VenoBox</a></li>
+            <li><a href="https://github.com/cferdinandi/smooth-scroll" target="_blank">Smooth Scroll</a></li>
+            <li><a href="https://github.com/pupunzi/jquery.mb.YTPlayer/wiki" target="_blank">YTPlayer</a></li>
+            <li><a href="http://plugins.jquery.com/ajaxchimp/" target="_blank">AjaxChimp</a></li>
+        </ol>
+        <p>
+
+            <hr>
+        <h3 id="php"><strong>G) PHP Code Explanation </strong> - <a href="#toc">top</a></h3>
+        <p>There are only one php code for contact page which is contact.php, open this file and change the email and subject on line 24 and line 27.
+            No need to edit other code unless you really want to.
+            <hr>
+        <p>Once again, thank you so much for purchasing this template. As I said at the beginning, I'd be glad to help you if you have any questions relating to this template. No guarantees, but I'll do my best to assist.</p>
+
+        <p class="append-bottom alt large"><strong>PixFix</strong></p>
+        <p><a href="#toc">Go To Table of Contents</a></p>
+
+        <hr class="space">
+    </div>
+    <!-- end div .container -->
+    <script src="syntax-highlighter/scripts/shCore.js"></script>
+    <script src="syntax-highlighter/scripts/shBrushXml.js"></script>
+    <script src="syntax-highlighter/scripts/shBrushCss.js"></script>
+    <script src="syntax-highlighter/scripts/shBrushJScript.js"></script>
+    <script src="syntax-highlighter/scripts/shBrushPhp.js"></script>
+    <script>
+        SyntaxHighlighter.all()
+
+    </script>
+</body>
+
+</html>

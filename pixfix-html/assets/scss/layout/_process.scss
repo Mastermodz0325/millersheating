@@ -1,0 +1,176 @@
+@use "../utilities" as *;
+
+/**----------------------------------------
+START: Process CSS
+----------------------------------------*/
+.process-item{
+    position: relative;
+    .shape{
+        position: absolute;
+        top: 20%;
+        right: -45px;
+        @include breakpoint(md){
+            display: none;
+        }
+    }
+    .process-icon{
+        height: 125px;
+        width: 125px;
+        @include flex-center;
+        border: 1px solid var(--rr-color-border-1);
+        border-radius: 50%;
+        margin: 0 auto;
+        margin-bottom: 30px;
+        @include breakpoint(md){
+            margin-bottom: 20px;
+        }
+    }
+    .title{
+        font-weight: 700;
+        margin-bottom: 25px;
+        @include breakpoint(md){
+            margin-bottom: 15px;
+        }
+    }
+    p{
+        @include breakpoint(lg){
+            br{
+                display: none;
+            }
+        }
+        @include breakpoint(md){
+            br{
+                display: block;
+            }
+        }
+        &:last-child{
+            margin-bottom: 0;
+        }
+    }
+}
+
+//process-6
+.rr-work-process-area{
+    position: relative;
+    border-top: 1px solid #6E777D;
+    & .bg-shape{
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+       
+    }
+    .process-title-wrap{
+        .section-heading-4{
+            text-align: center;
+            margin-bottom: 60px;
+            .sub-heading-6{
+                font-family: var(--rr-ff-heading);
+                margin-bottom: 11px;
+                position: relative;
+                font-style: normal;
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 24px;
+                text-transform: uppercase;
+                color: #2AB97E;
+                &::before{
+                background: var(--rr-color-theme-green);
+                position: absolute;
+                height: 1px;
+                width: 113px;
+                content: '';
+                bottom: -1px;
+                left: 50%;
+                transform: translate(-50%, 0);
+                }
+            }
+            .section-title{
+                color: var(--rr-color-common-white);
+                margin-bottom: 0;
+                margin: 0 auto;
+            }
+        }
+    }
+    .rr-work-process-wrapper{
+        margin-top: 40px;
+    }
+}
+.rr-work-process-thumb {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    left: 50%;
+    right: 50%;
+    top: -40px;
+    background: #2AB97E;
+    line-height: 80px;
+    text-align: center;
+    border-radius: 50%;
+    transform:translateX(-50%);
+}
+.rr-work-process_item {
+    background: #232323;
+    padding: 60px 27px 30px 30px;
+    border-radius: 20px;
+    height: 206px;
+    @include transition (all 0.3s ease-in-out);
+    &:hover{
+        .rr-work-process-thumb{
+            background-color: var(--rr-color-theme-yellow);
+           svg{
+            stroke: #171717;
+           }
+        }
+    }
+}
+
+.rr-work-process-text-title{
+   & h3{
+    a{
+    font-family: var(--rr-ff-heading);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: -0.72px;
+    color: #FFFFFF;
+    @include transition (all 0.3s ease-in-out);
+    &:hover{
+        color: var(--rr-color-theme-green);
+    }
+    }
+
+   }
+   & span{
+    font-family: 'Titillium Web';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    text-transform: capitalize;
+    color: #6E777D;
+    opacity: 0.2;
+
+   }
+ 
+}
+.rr-work-process-text{
+   & p{
+        font-family: 'Archivo';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 29px;
+        color: #DDDDDD;
+       }
+}
+
+
+/* !END:  Process CSS */

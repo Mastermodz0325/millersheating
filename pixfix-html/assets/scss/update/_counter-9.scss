@@ -1,0 +1,75 @@
+@use "../utilities" as *;
+
+
+
+.counter-9 {
+    background: #EF1A22;
+    border-radius: 20px;
+    padding: 65px 0;
+    margin: 20px;
+
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        @include breakpoint(md) {
+            display: block;
+            column-count: 2;
+            margin-bottom: -20px;
+        }
+
+        @include breakpoint(sm) {
+            column-count: 1;
+        }
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+        @include breakpoint(lg) {
+            gap: 10px;
+        }
+
+        @include breakpoint(md) {
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .count-9 {
+            font-size: 60px;
+            font-weight: 600;
+            line-height: 1;
+            letter-spacing: -1.7999999523162842px;
+            color: #fff;
+            margin-bottom: 0;
+
+            @include breakpoint(lg) {
+                font-size: 50px;
+            }
+
+            .odometer.odometer-auto-theme,
+            .odometer.odometer-theme-default {
+                font-family: var(--rr-ff-heading);
+                vertical-align: inherit;
+                line-height: 1.1em;
+            }
+        }
+
+        .count-text {
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 26px;
+            color: #fff;
+            letter-spacing: -0.7200000286102295px;
+            font-family: var(--rr-ff-heading);
+
+            @include breakpoint(lg) {
+                font-size: 18px;
+                line-height: 22px;
+            }
+        }
+    }
+}

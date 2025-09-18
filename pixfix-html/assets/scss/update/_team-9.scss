@@ -1,0 +1,148 @@
+@use "../utilities" as *;
+
+
+.our-team-9 {
+
+    &__content {
+        .sticky__left__child {
+            max-width: 321px;
+
+            @include breakpoint(lg) {
+                max-width: 300px;
+            }
+
+            &.posFix {
+                position: fixed;
+                top: 100px;
+            }
+
+            &.posAbs {
+                position: absolute;
+                bottom: 0px;
+            }
+        }
+
+        padding-right: 91px;
+
+
+        @include breakpoint(sm) {
+            margin-bottom: 50px;
+        }
+
+        .section-heading {
+            @include breakpoint(md) {
+                max-width: 240px;
+            }
+
+            @include breakpoint(sm) {
+                max-width: inherit;
+            }
+        }
+
+        .section-title {
+            margin-bottom: 20px;
+
+            @include breakpoint(lg) {
+                max-width: 100%;
+            }
+        }
+
+        @include breakpoint(lg) {
+            padding-right: 0;
+            margin-bottom: 30px;
+        }
+
+        p {
+            margin-bottom: 30px;
+        }
+    }
+
+    &__item {
+        border-radius: 20px;
+        background: #F8F8F8;
+        margin-bottom: 30px;
+
+        &-media {
+            position: relative;
+            z-index: 2;
+
+            &::before {
+                border-radius: 20px;
+                background: linear-gradient(180deg, rgba(250, 228, 198, 0.00) 0%, rgba(239, 26, 34, 0.98) 100%);
+                content: "";
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                z-index: -1;
+            }
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+        &-content {
+            padding: 35px 40px 30px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            @include breakpoint(lg) {
+                padding: 35px 25px 30px;
+            }
+
+            @include breakpoint(md) {
+                padding: 30px 25px 25px;
+            }
+
+            @include breakpoint(sm) {
+                padding: 35px 15px 30px;
+            }
+
+            .text {
+                p {
+                    margin-bottom: 0;
+                }
+
+                h3 {
+                    @include breakpoint(md) {
+                        font-size: 20px;
+                    }
+                }
+
+                a {
+                    &:hover {
+                        color: #EF1A22;
+                    }
+                }
+            }
+
+            .icon {
+                width: 40px;
+                height: 40px;
+                display: flex;
+                align-items: center;
+                border-radius: 500px;
+                justify-content: center;
+                background-color: #4F2325;
+                color: var(--rr-color-common-white);
+
+                &:hover {
+                    background-color: #EF1A22;
+                }
+
+                @include breakpoint(md) {
+                    display: none;
+                }
+
+                @include breakpoint(sm) {
+                    display: flex;
+                }
+            }
+        }
+    }
+}

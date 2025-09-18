@@ -1,0 +1,65 @@
+@use "../utilities" as *;
+
+
+
+
+.hero-11 {
+    .hero-8 {
+        &__slider-item {
+            border-radius: 40px;
+
+            &::before {
+                background: linear-gradient(90deg, #171717 0%, rgba(23, 23, 23, 0.3) 84.02%);
+            }
+        }
+    }
+
+    .hero-content-8 {
+        padding-top: 180px;
+        padding-bottom: 180px;
+
+        @include breakpoint(md) {
+            padding-top: 80px;
+            padding-bottom: 80px;
+        }
+        @include breakpoint(sm) {
+            padding-top: 70px;
+            padding-bottom: 70px;
+        }
+    }
+
+    .title {
+        font-size: 116px !important;
+        letter-spacing: -3.50px !important;
+        line-height: 1.01 !important;
+
+        @include breakpoint(lg) {
+            font-size: 80px;
+            letter-spacing: 0;
+        }
+
+        @include breakpoint(md) {
+            font-size: 50px;
+        }
+
+        @include breakpoint(sm) {
+            font-size: 40px;
+        }
+    }
+
+    .dec {
+        margin-bottom: 39px !important;
+        margin-top: 26px !important;
+
+        @include breakpoint(md) {
+            font-size: 18px;
+            line-height: 28px;
+        }
+
+        @include breakpoint(sm) {
+            font-size: 16px;
+            margin-bottom: 25px;
+            margin-top: 20px;
+        }
+    }
+}

@@ -1,0 +1,194 @@
+@use "../utilities" as *;
+
+
+
+.faq-10 {
+
+    &__tab {
+        .accordion-item {
+            border: 2px solid #DDDDDD;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            color: inherit;
+            overflow: hidden;
+            background-color: transparent;
+
+            &:last-of-type {
+                margin-bottom: 0;
+
+                @include breakpoint(md) {
+                    margin-bottom: 30px;
+                }
+            }
+
+            &:not(:first-of-type) {
+                border: 2px solid #DDDDDD;
+            }
+
+            .accordion-body {
+                padding: 34px 41px 32px 80px;
+
+                p {
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 28.8px;
+                    margin-bottom: 0;
+                    color: #000000;
+                }
+
+                @include breakpoint(sm) {
+                    padding: 20px;
+                }
+            }
+
+            .accordion-header {
+                .accordion-button {
+                    font-size: 24px;
+                    font-weight: 700;
+                    line-height: 36px;
+                    cursor: pointer;
+                    overflow: hidden;
+                    background: transparent;
+                    letter-spacing: -0.7200000286102295px;
+                    padding: 14px 40px;
+                    padding-bottom: 20px;
+                    transition: .3s;
+                    font-family: var(--rr-ff-heading);
+
+                    @include breakpoint(sm) {
+                        padding: 20px;
+                        font-size: 20px;
+                    }
+
+                    span {
+                        margin-right: 22px;
+
+                        @include breakpoint(sm) {
+                            display: none;
+                        }
+                    }
+
+                    &.collapsed {
+                        padding: 39.5px 40px;
+
+                        @include breakpoint(sm) {
+                            padding: 20px;
+                        }
+                    }
+
+                    &:focus {
+                        z-index: 3;
+                        border-color: inherit;
+                        outline: 0;
+                        box-shadow: inherit;
+                    }
+
+                    &::after {
+                        margin-left: auto;
+                        content: "\2b";
+                        height: inherit;
+                        line-height: 1;
+                        font-weight: 400;
+                        background-image: inherit;
+                        font-family: "Font Awesome 6 Pro";
+                    }
+
+                    &:not(.collapsed) {
+                        color: inherit;
+                        background-color: #FAD105;
+                        box-shadow: inherit;
+
+                        &::after {
+                            content: "\f068";
+                            transform: inherit;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+
+
+    &__author {
+        &__thumb {
+            position: relative;
+            text-align: center;
+
+            &::before {
+                content: "";
+                width: 100%;
+                height: 167px;
+                bottom: -9px;
+                left: 0;
+                position: absolute;
+                background: linear-gradient(0deg, #FC8459 12.32%, rgba(252, 132, 89, 0) 66.18%);
+            }
+        }
+
+        &__contact {
+            background: #F8F4EF;
+            border-radius: 10px;
+        }
+
+        &__call {
+            background: var(--rr-color-theme-primary2);
+            display: flex;
+            gap: 7px;
+            align-items: center;
+            padding: 62px 0;
+            border-radius: 10px;
+            justify-content: center;
+
+            @include breakpoint(sm) {
+                padding: 45px 0;
+            }
+
+            .icon {
+                width: 68px;
+                height: 68px;
+                background: var(--rr-color-common-white);
+                color: var(--rr-color-theme-primary2);
+                border-radius: 100px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 30px;
+            }
+
+            div {
+                span {
+                    font-size: 15px;
+                    font-weight: 700;
+                    line-height: 18px;
+                    color: #fff;
+                    display: block;
+                    margin-bottom: 8px;
+                    text-transform: uppercase;
+                    font-family: var(--rr-ff-heading);
+                }
+
+                a {
+                    font-size: 24px;
+                    font-weight: 700;
+                    line-height: 36px;
+                    letter-spacing: -0.7200000286102295px;
+                    color: #fff;
+                    font-family: var(--rr-ff-heading);
+
+                    &:hover {
+                        color: #14534F;
+                    }
+                }
+            }
+        }
+    }
+}
+.brand-10__area {
+    background: #FAD105;
+    padding: 40px;
+    border-radius: 0 0 10px 10px;
+    .swiper-wrapper{
+        transition-timing-function: linear;
+    }
+}

@@ -1,0 +1,63 @@
+@use "../utilities" as *;
+
+
+.footer-9 {
+    border-radius: 0;
+    background-color: #4F2325;
+    padding-top: 205px;
+    margin: 0;
+
+    .footer-8 {
+
+        &__top-info {
+            padding-right: 0;
+            padding-bottom: 35px;
+
+            &__item {
+                a {
+                    &:hover {
+                        color: #EF1A22;
+                    }
+                }
+
+                span {
+                    font-size: 16px;
+                    color: #DDDDDD;
+                    display: block;
+                    margin-bottom: 10px;
+                }
+            }
+        }
+
+        &__list {
+
+            li {
+                a {
+
+                    &:hover {
+                        color: #EF1A22;
+                    }
+                }
+            }
+        }
+
+        &__social-list {
+            li {
+
+                a {
+                    border: 1px solid rgba(255, 255, 255, 0.20);
+
+                    &:hover {
+                        background: rgba(255, 255, 255, 0.20);
+                        border-color: transparent;
+                        color: var(--rr-color-common-white);
+                    }
+
+                }
+            }
+        }
+    }
+
+}
+
+

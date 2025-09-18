@@ -1,0 +1,66 @@
+@use "../utilities" as *;
+
+
+
+.mb-minus-20 {
+    margin-bottom: -20px;
+}
+
+.services-9 {
+    &__item {
+        border: 1px solid #DDDDDD;
+        border-radius: 20px;
+        padding: 30px;
+
+        @include breakpoint(md) {
+            padding: 25px;
+        }
+    }
+
+    &__title {
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 36px;
+        margin-bottom: 20px;
+        margin-top: 20px;
+        color: #000000;
+
+        a:hover {
+            color: #EF1A22;
+        }
+
+        @include breakpoint(lg) {
+            font-size: 28px;
+        }
+
+        @include breakpoint(md) {
+            font-size: 20px;
+        }
+    }
+
+    &__dec {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 28.8px;
+        color: #000000;
+        margin-bottom: 0;
+    }
+
+    &__thumb {
+        text-align: center;
+
+        @include breakpoint(sm) {
+            margin: 30px 0;
+        }
+
+        img {
+            border-radius: 20px;
+
+            @include breakpoint(sm) {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+}

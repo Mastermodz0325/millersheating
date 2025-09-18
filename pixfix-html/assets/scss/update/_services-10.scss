@@ -1,0 +1,124 @@
+@use "../utilities" as *;
+
+
+
+.services-10 {
+    background: #14534E;
+    border-radius: 10px;
+
+    &__item {
+        background: rgb(255 255 255 / 5%);
+        border-radius: 10px;
+        padding: 40px;
+        padding-left: 33px;
+        padding-bottom: 30px;
+
+        @include breakpoint(md) {
+            padding: 20px;
+        }
+
+        .div {
+            display: flex;
+            align-items: center;
+            gap: 27px;
+
+            @include breakpoint(md) {
+                gap: 20px;
+            }
+
+            @include breakpoint(sm) {
+                display: block;
+            }
+        }
+
+        .rr-secondary-btn {
+            background: transparent;
+            border: 1px solid #fff;
+            color: var(--rr-color-common-white);
+            padding: 18.5px 30px;
+
+            &:hover {
+                border-color: #14534F;
+                background-color: #14534F;
+            }
+
+            i {
+                margin-left: 8px;
+            }
+        }
+    }
+
+    &__icon {
+        width: 64px;
+        height: 64px;
+        background: #FC8459;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 100px;
+    }
+
+    &__title {
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 36px;
+        margin-bottom: 0;
+        color: #fff;
+
+        a:hover {
+            color: var(--rr-color-theme-primary);
+        }
+
+        @include breakpoint(md) {
+            font-size: 25px;
+        }
+
+        @include breakpoint(sm) {
+            margin-top: 10px;
+        }
+    }
+
+    &__dec {
+        margin-top: 20px;
+        margin-bottom: 40px;
+    }
+
+    &__bottom {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background: #FAD105;
+        padding: 40px;
+        border-radius: 10px;
+        margin-top: 60px;
+
+        @include breakpoint(sm) {
+            display: block;
+            padding: 30px;
+            margin-top: 30px;
+        }
+
+        .rr-secondary-btn {
+            background: #000000;
+            color: var(--rr-color-common-white);
+            padding: 19.5px 31px;
+
+            i {
+                margin-left: 8px;
+            }
+        }
+    }
+
+    &__text {
+        h4 {
+            font-size: 30px;
+            font-weight: 700;
+            line-height: 36px;
+            margin-bottom: 0;
+
+            @include breakpoint(sm) {
+                margin-bottom: 20px;
+            }
+        }
+    }
+}

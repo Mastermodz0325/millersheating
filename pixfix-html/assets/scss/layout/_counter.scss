@@ -1,0 +1,338 @@
+@use "../utilities" as *;
+
+/**----------------------------------------
+START: Service CSS
+----------------------------------------*/
+.counter-1{
+    .counter-item{
+        position: relative;
+        @include breakpoint(sm){
+            margin-bottom: 30px;
+        }
+        &:before{
+            background-color: #333333;
+            content: "";
+            height: 100%;
+            width: 1px;
+            position: absolute;
+            top: 0;
+            right: -5px;
+            @include breakpoint(sm){
+                display: none;
+            }
+        }
+        &.item-2{
+            &:before{
+                display: none;
+            }
+            @include breakpoint(sm){
+                margin-bottom: 0px;
+            }
+        }
+        .counter-icon{
+            margin-bottom: 30px;
+            @include breakpoint(sm){
+                margin-bottom: 15px;
+            }
+        }
+        .title{
+            color: var(--rr-color-common-white);
+            font-size: 48px;
+            line-height: 1;
+            margin-bottom: 0;
+            .odometer-auto-theme{
+                font-family: inherit;
+                line-height: 1;
+                margin-bottom: 4px;
+            }
+        }
+        p{
+            font-size: 16px;
+            color: var(--rr-color-common-white);
+            margin-bottom: 0;
+        }
+    }
+    &.bright-color{
+        .counter-item{
+            &:before{
+                background-color: var(--rr-color-border-1);
+            }
+            .title{
+                color: var(--rr-color-heading-primary);
+                margin-bottom: 10px;
+            }
+            p{
+                color: var(--rr-color-heading-primary);
+            }
+            .counter-icon{
+                margin-bottom: 20px;
+            }
+        }
+    }
+}
+
+.counter-2{
+    .counter-info{
+        @include breakpoint(md){
+            margin-bottom: 40px;
+        }
+        .counter-list{
+            margin-bottom: 50px;
+            li{
+                font-family: var(--rr-ff-heading);
+                @include flex-vertical-center;
+                color: var(--rr-color-common-white);
+                font-size: 15px;
+                text-transform: uppercase;
+                font-weight: 700;
+                &:not(:last-of-type){
+                    margin-bottom: 10px;
+                }
+                i{
+                    color: var(--rr-color-theme-primary);
+                    margin-right: 15px;
+                }
+            }
+        }
+    }
+    .counter-item-wrap{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 80px;
+        position: relative;
+        @include breakpoint(sm){
+            grid-gap: 40px;
+        }
+        .center-icon{
+            background-color: var(--rr-color-theme-primary);
+            height: 80px;
+            width: 80px;
+            border-radius: 50%;
+            @include flex-center;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 1;
+            .ripple{
+                &:before,
+                &:after{
+                    width: 80px;
+                    height: 80px;
+                    z-index: -1;
+                }
+            }
+        }
+        .counter-item{
+            background-color: rgba(255, 255, 255, 0.04);
+            text-align: center;
+            padding: 30px 0;
+            .title{
+                font-size: 48px;
+                font-weight: 600;
+                -webkit-text-fill-color: transparent;
+                -webkit-text-stroke-width: 1px;
+                -webkit-text-stroke-color: rgba(255, 255, 255, 0.7);
+                @include breakpoint(sm){
+                    font-size: 40px;
+                }
+                .odometer-auto- {
+                    font-family: inherit;
+                    line-height: 1;
+                    margin-bottom: 4px;
+                }
+            }
+            p{
+                color: var(--rr-color-common-white);
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+// counter-section-4
+
+.counter-section-4{
+    margin-top: -75px;
+    .counter-item{
+        background: #FFFFFF;
+        box-shadow: 0px 0px 60px rgba(0, 0, 0, 0.05);
+        border-radius: 20px;
+        padding: 30px;
+        @include transition (all .3s ease-in-out);
+        .counter-content{
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            .icon{
+                @include transition (all .3s ease-in-out);
+            }
+            .title{
+                font-family: var(--rr-ff-heading);
+                color: var(--rr-color-heading-primary);
+                font-weight: var(--rr-fw-sbold);
+                font-size: 60px;
+                line-height: 70px;
+                font-style: normal;
+                letter-spacing: -1.8px;
+                margin-bottom: 0;
+                @include transition (all .3s ease-in-out);
+
+                span{
+                    font-family: var(--rr-ff-heading);
+                }
+            }
+        }
+        .dec{
+            font-family: var(--rr-ff-heading);
+            color: var(--rr-color-text-body);
+            font-weight: var(--rr-fw-bold);
+            opacity: 0.8;
+            font-style: normal;
+            font-size: 16px;
+            line-height: 24px;
+            text-transform: uppercase;
+            margin-bottom: 0;
+            margin-top: 16px;
+        }
+
+
+        &:hover{
+            background: var(--rr-color-theme-green);
+            .icon{
+                svg{
+                    path{
+                        stroke: var(--rr-color-common-white);
+                    }
+                }
+            }
+            .title{
+                color: var(--rr-color-common-white);
+            }
+            .dec{
+                color: var(--rr-color-common-white);
+            }
+        }
+    }
+}
+
+// counter-section-5
+.counter-5{
+    margin-bottom: -148px;
+    position: relative;
+    z-index: 1;
+}
+.counter-wrap-5{
+    background: #F4FBF9;
+    border: 1px solid #DDDDDD;
+    border-radius: 20px;
+    padding: 62px 91px 60px 78px;
+}
+.counter-item-5{
+    text-align: center;
+    position: relative;
+    .counter-icon-5{
+        background: #FEDB5C;
+        width: 88px;
+        height: 88px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        position: absolute;
+        top: -110px;
+        left: 50%;
+        transform: translate(-50%, 0%);
+    }
+    .title{
+        font-family: var(--rr-ff-heading);
+        color: var(--rr-color-heading-primary);
+        font-style: normal;
+        font-weight: 600;
+        font-size: 48px;
+        line-height: 58px;
+        letter-spacing: -1.44px;
+        margin-bottom: 4px;
+        span{
+            font-family: var(--rr-ff-heading);
+        }
+
+        @include breakpoint(md){
+            margin-top: 120px;
+        }
+        @include breakpoint(sm){
+            margin-top: 120px;
+        }
+    }
+    .dec{
+        font-family: var(--rr-ff-heading);
+        color: var(--rr-color-common-dark       );
+        font-style: normal;
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 18px;
+        text-transform: uppercase;
+    }
+}
+
+// counter 
+.rrcounter-area{
+    margin-bottom: -100px;
+}
+.rrcounter__item{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    @include breakpoint (xl){
+        text-align: center;
+        row-gap: 10px;
+    }
+    @include breakpoint (lg){
+        justify-content: center;
+    }
+    &-thumb{
+        background-color: rgba(255, 255, 255, 0.1);
+        display: inline-block;
+        width: 90px;
+        height: 90px;
+        font-size: 45px;
+        line-height: 90px;
+        text-align: center;
+        border-radius: 50%;
+    
+    }
+    &-text{
+        & .title{
+        font-family: var(--rr-ff-heading);
+        color: var(--rr-color-common-white);
+        font-style: normal;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 36px;
+        text-transform: capitalize;
+        margin-bottom: 6px;
+        }
+        & p{
+            font-family: var(--rr-ff-body);
+            color: var(--rr-color-common-white);
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 29px;
+            margin-bottom: 0;
+        }
+    }
+}
+.rrcounter{
+    padding: 53px 70px 53px 47px;
+    background-color: #171717;
+    border-radius: 5px 0px 0px 5px;
+    position: relative;
+    z-index: 1;
+    @include breakpoint (sm){
+        padding: 20px 20px;
+    }
+}
+
+/* !END:  Service CSS */

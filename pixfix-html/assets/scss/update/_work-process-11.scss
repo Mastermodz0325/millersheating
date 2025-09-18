@@ -1,0 +1,86 @@
+@use "../utilities" as *;
+
+
+
+.work-process-11 {
+    &__item {
+        text-align: center;
+        background: #F8F4EF;
+        border-radius: 10px;
+        padding: 35.5px 22px;
+        margin-left: 2px;
+        margin-right: 2px;
+
+        @include breakpoint(md) {
+            padding: 35.5px 28px;
+        }
+
+        .number {
+            width: 59px;
+            height: 59px;
+            background: #FF3600;
+            font-size: 30px;
+            font-weight: 700;
+            line-height: 36px;
+            color: #fff;
+            margin-bottom: 0;
+            border-radius: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto;
+            font-family: var(--rr-ff-heading);
+        }
+    }
+
+    &__title {
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 36px;
+        letter-spacing: -0.72px;
+        color: #040401;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+
+    &__dec {
+        color: #000;
+        margin-bottom: 0;
+    }
+
+    &__top {
+        .section-heading {
+            .section-title {
+                margin: 0;
+            }
+        }
+
+        &__thumb {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+
+            img {
+                border-radius: 10px;
+            }
+        }
+    }
+}
+
+.sticky__left__child {
+    max-width: 410px;
+
+    @include breakpoint(lg) {
+        max-width: 300px;
+    }
+
+    &.posFix {
+        position: fixed;
+        top: 100px;
+    }
+
+    &.posAbs {
+        position: absolute;
+        bottom: 0px;
+    }
+}

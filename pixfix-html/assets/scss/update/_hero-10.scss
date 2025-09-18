@@ -1,0 +1,166 @@
+@use "../utilities" as *;
+
+
+.header-10 {
+    background: #14534E;
+    border-radius: 0;
+
+    .top-bar {
+        background-color: #205C57;
+    }
+
+    .primary-header-9 {
+        width: 100%;
+        left: 0;
+    }
+}
+
+.hero-10 {
+    background: #14534E;
+    position: relative;
+
+    &__content {
+        padding-top: 97px;
+        padding-bottom: 133px;
+        z-index: 2;
+        position: relative;
+
+        @include breakpoint(md) {
+            padding-top: 80px;
+            padding-bottom: 30px;
+        }
+
+        @include breakpoint(sm) {
+            padding-top: 70px;
+            padding-bottom: 30px;
+        }
+
+        .rr-secondary-btn {
+            background: var(--rr-color-theme-primary2);
+            color: var(--rr-color-common-white);
+            padding: 19.5px 30.5px;
+
+            i {
+                margin-left: 8px;
+            }
+        }
+    }
+
+    &__title {
+        font-size: 95.12px;
+        font-weight: 600;
+        line-height: 93.56px;
+        letter-spacing: -2.8536417484283447px;
+        color: #fff;
+        margin-bottom: 0;
+
+        @include breakpoint(lg) {
+            font-size: 75px;
+            line-height: 80px;
+        }
+
+        @include breakpoint(sm) {
+            font-size: 45px;
+            line-height: 55px;
+        }
+
+        span {
+            color: #FAD105;
+        }
+    }
+
+    &__dec {
+        font-size: 20.96px;
+        font-weight: 400;
+        line-height: 37.73px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        color: #fff;
+    }
+
+    &__thumb {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        z-index: 1;
+
+        @include breakpoint(lg) {
+            right: -70px;
+        }
+
+        @include breakpoint(md) {
+            position: inherit;
+            text-align: center;
+            right: 0;
+            left: 0;
+        }
+
+        img {
+            max-width: inherit;
+
+            @include breakpoint(sm) {
+                max-width: 100%;
+            }
+        }
+
+        &__wrapper {
+            width: 100%;
+            height: 100%;
+            position: relative;
+        }
+    }
+
+    &__bg {
+        position: absolute;
+        width: 568px;
+        height: 568px;
+        background: #FAD105;
+        border-radius: 500px;
+        bottom: -169px;
+        right: -10px;
+
+        @include breakpoint(lg) {
+            width: 500px;
+            height: 500px;
+        }
+
+        @include breakpoint(md) {
+            right: 0;
+        }
+
+        @include breakpoint(sm) {
+            right: -45px;
+            width: 400px;
+            height: 400px;
+        }
+
+        &__shape {
+            position: absolute;
+
+            img {
+                max-width: inherit;
+            }
+
+            &-1 {
+                bottom: -155px;
+                right: 69px;
+            }
+
+            &-2 {
+                bottom: -78px;
+                left: -176px;
+                right: -166px;
+            }
+
+            &-3 {
+                bottom: -1325px;
+                left: -956px;
+            }
+
+            &-4 {
+                bottom: -1394px;
+                left: -450px;
+            }
+        }
+    }
+}

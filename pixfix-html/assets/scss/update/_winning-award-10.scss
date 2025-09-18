@@ -1,0 +1,140 @@
+@use "../utilities" as *;
+
+
+
+.winning-award-10 {
+    position: relative;
+    z-index: 9;
+    background: #155450;
+    border-radius: 10px 10px 0 0;
+
+    &__item {
+        overflow: hidden;
+        padding: 50px 20px 45px;
+        margin-bottom: 30px;
+        text-align: center;
+        background-color: #215D59;
+        position: relative;
+
+        @include breakpoint(lg) {
+            padding: 30px 15px 30px;
+        }
+
+        .title {
+            color: var(--rr-color-common-white);
+            margin-bottom: 30px;
+
+            .odometer.odometer-auto-theme,
+            .odometer.odometer-theme-default {
+                font-family: var(--rr-ff-heading);
+                vertical-align: inherit;
+            }
+        }
+
+        img {
+            margin-bottom: 25px;
+        }
+
+        p {
+            font-size: 24px;
+            color: var(--rr-color-common-white);
+        }
+    }
+
+    &__botton {
+        &__text {
+            text-align: center;
+            padding-top: 100px;
+            padding-bottom: 180px;
+            position: relative;
+            z-index: 1;
+
+            @include breakpoint(md) {
+                padding-top: 60px;
+                padding-bottom: 80px;
+            }
+
+            @include breakpoint(sm) {
+                padding-top: 50px;
+                padding-bottom: 70px;
+            }
+
+            h3 {
+                font-size: 24px;
+                font-weight: 700;
+                line-height: 36px;
+                letter-spacing: -0.7200000286102295px;
+                color: #fff;
+                margin-bottom: 0;
+
+                @include breakpoint(lg) {
+                    font-size: 20px;
+                    line-height: 1;
+                }
+
+                @include breakpoint(sm) {
+                    font-size: 18px;
+                }
+
+                a {
+                    color: #FAD105;
+                    margin-left: 18px;
+                    cursor: pointer;
+                    &:hover{
+                        color: var(--rr-color-theme-primary);
+                    }
+
+                    @include breakpoint(lg) {
+                        margin-left: 8px;
+                    }
+
+                    i {
+                        margin-left: 8px;
+                        transform: translateY(2px);
+                        font-size: 22px;
+
+                        @include breakpoint(sm) {
+                            margin-left: 5px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &__shape {
+        &-1 {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+
+            img {
+                @include breakpoint(xl) {
+                    max-width: inherit;
+                    width: 70%;
+                }
+            }
+        }
+
+        &-2 {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+
+            @include breakpoint(xl) {
+                right: -14%;
+            }
+
+            @include breakpoint(lg) {
+                right: -17%;
+            }
+
+            img {
+                @include breakpoint(xl) {
+                    max-width: inherit;
+                    width: 70%;
+                }
+            }
+        }
+    }
+}

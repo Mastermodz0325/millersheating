@@ -1,0 +1,117 @@
+@use "../utilities" as *;
+
+
+
+/* ////////////////////////////////////////////////////////////////
+ //Custom Animation */
+
+/* // Animate Up-down */
+.upDown {
+    animation: upDown 1.3S infinite alternate;
+}
+
+@keyframes upDown {
+    0% {
+        @include transform(translateY(0px));
+    }
+
+    100% {
+        @include transform(translateY(-15px));
+    }
+}
+
+.upDown-top {
+    animation: upDown 1S infinite alternate;
+}
+
+@keyframes upDown-top {
+    0% {
+        @include transform(translateY(0px));
+    }
+
+    100% {
+        @include transform(translateY(-10px));
+    }
+}
+
+.upDown-bottom {
+    animation: upDown .8S infinite alternate;
+}
+
+@keyframes upDown-bottom {
+    0% {
+        @include transform(translateY(0px));
+    }
+
+    100% {
+        @include transform(translateY(-8px));
+    }
+}
+
+/* Animate left-down */
+.leftRight {
+    animation: leftRight 1.3S infinite alternate;
+}
+
+/* Animate left-down */
+@keyframes leftRight {
+    0% {
+        @include transform(translateX(0px));
+    }
+
+    100% {
+        @include transform(translateX(-15px));
+    }
+}
+
+/* Animate left-down */
+@keyframes rightLeft {
+    0% {
+        @include transform(translateX(0px));
+    }
+
+    100% {
+        @include transform(translateX(15px));
+    }
+}
+
+.rightLeft {
+    animation: rightLeft 1.3S infinite alternate;
+}
+
+@keyframes zooming {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.zooming {
+    animation: zooming 1.3S infinite alternate;
+}
+
+
+@keyframes zoom {
+    0% {
+        transform: scale(1) translate(0, 0);
+    }
+
+    50% {
+        transform: scale(1.1) translate(19px, 19px);
+    }
+
+    100% {
+        transform: scale(1) translate(0, 0);
+    }
+}
+
+.zoom {
+    animation: zooming 1.3S infinite alternate;
+}

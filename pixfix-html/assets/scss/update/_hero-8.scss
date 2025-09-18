@@ -1,0 +1,264 @@
+@use "../utilities" as *;
+
+
+
+.hero-8 {
+    &__slider {
+        &-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 20px;
+
+            &::before {
+                content: "";
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                border-radius: 20px;
+                z-index: 1;
+                background-color: rgb(0 0 0 / 60%);
+            }
+
+            .hero-content-8 {
+                position: relative;
+                z-index: 1;
+                padding-top: 200px;
+                padding-bottom: 220px;
+
+                @include breakpoint(md) {
+                    padding-top: 80px;
+                }
+
+                @include breakpoint(sm) {
+                    padding-top: 70px;
+                    padding-bottom: 70px;
+                }
+
+                .title {
+                    font-size: 110.32px;
+                    font-weight: 600;
+                    line-height: 1;
+                    letter-spacing: -3.1027116775512695px;
+                    color: #fff;
+                    margin-bottom: 0;
+
+                    @include breakpoint(md) {
+                        font-size: 90px;
+                    }
+
+                    @include breakpoint(sm) {
+                        font-size: 39px;
+                        letter-spacing: 0;
+                    }
+                }
+
+                .dec {
+                    font-size: 20.96px;
+                    font-weight: 400;
+                    line-height: 37.73px;
+                    color: #fff;
+                    margin-bottom: 26px;
+                    margin-top: 10px;
+
+                    @include breakpoint(sm) {
+                        font-size: 18px;
+                    }
+                }
+
+                .pixfix-btn {
+                    display: flex;
+                    align-items: center;
+                    gap: 34px;
+
+                    @include breakpoint(sm) {
+                        display: block;
+                    }
+
+                    .rr-secondary-btn {
+                        background: #EF1A22;
+                        color: var(--rr-color-common-white);
+                        padding: 19.5px 31.4px;
+
+                        i {
+                            margin-left: 10px;
+                        }
+
+                        &:before {
+                            background: #4F2325;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &__bg {
+        &.kenburns {
+            &.kenburns-top {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 20px;
+                    object-fit: cover;
+                    background-position: center;
+                    background-size: cover;
+                }
+            }
+        }
+    }
+
+    &__call {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+
+        .contact {
+            margin-bottom: 0;
+
+            span {
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 28.8px;
+                color: #fff;
+                display: block;
+                font-family: var(--rr-ff-body);
+            }
+
+            a {
+                font-size: 21px;
+                font-weight: 700;
+                line-height: 36px;
+                letter-spacing: -0.7200000286102295px;
+                color: #fff;
+                font-family: var(--rr-ff-body);
+
+                &:hover {
+                    color: var(--rr-color-theme-primary2);
+                }
+            }
+        }
+    }
+
+    .pagination-8 {
+        &__list {
+            position: absolute;
+            bottom: 30px;
+            z-index: 2;
+            left: 288px;
+
+            @include breakpoint(xl) {
+                left: 0;
+                right: 0;
+            }
+
+            ul {
+                list-style: none;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 230px;
+
+                @include breakpoint(lg) {
+                    gap: 0px;
+                    justify-content: space-around;
+                }
+
+                li {
+                    font-size: 21px;
+                    font-weight: 700;
+                    line-height: 36px;
+                    letter-spacing: -0.7200000286102295px;
+                    color: var(--rr-color-common-white);
+                    font-family: var(--rr-ff-heading);
+
+                    span {
+                        font-size: 15px;
+                        font-weight: 700;
+                        line-height: 18px;
+                        display: block;
+                        margin-bottom: 10px;
+                        color: var(--rr-color-common-white);
+                        font-family: var(--rr-ff-heading);
+                    }
+                }
+            }
+        }
+    }
+
+    .pixfix-swiper-pagination {
+        height: auto !important;
+        width: 100% !important;
+        position: absolute;
+        top: auto !important;
+        bottom: 127px !important;
+        left: 0 !important;
+        z-index: 2;
+        display: flex;
+        justify-content: center;
+        right: 0;
+        margin: 0 auto;
+
+        @include breakpoint(md) {
+            width: 92% !important;
+        }
+
+        .swiper-pagination-bullet {
+            width: 430px;
+            height: 1px;
+            border: 1px solid rgb(255 255 255 / 30%);
+            margin: 0 0 !important;
+
+            @include breakpoint(xl) {
+                width: 350px;
+            }
+
+            @include breakpoint(lg) {
+                width: 290px;
+            }
+            @include breakpoint(md) {
+                width: 260px;
+            }
+
+            &::before {
+                background-color: var(--rr-color-common-white);
+                width: 0px;
+                height: 2px;
+                border: none;
+                opacity: 0;
+                visibility: hidden;
+                transition: 1s;
+            }
+
+            &.swiper-pagination-bullet-active {
+                border: 1px solid rgb(255 255 255 / 30%);
+
+                &::before {
+                    opacity: 1;
+                    visibility: visible;
+                    width: 430px;
+
+                    @include breakpoint(xl) {
+                        width: 350px;
+                    }
+
+                    @include breakpoint(lg) {
+                        width: 290px;
+                    }
+                    @include breakpoint(md) {
+                        width: 260px;
+                    }
+                }
+            }
+        }
+    }
+
+    .shape {
+        position: absolute;
+        left: -44.5%;
+        top: -65%;
+    }
+}

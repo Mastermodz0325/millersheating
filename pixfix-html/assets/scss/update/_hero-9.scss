@@ -1,0 +1,191 @@
+@use "../utilities" as *;
+
+.hero-9 {
+    position: relative;
+    border-radius: 0px 0px 10px 10px;
+    margin-top: -85px;
+
+    .hero-9__slider-item {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        background-size: cover;
+        background-position: bottom;
+
+        &::before {
+            content: "";
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 2;
+            height: 100%;
+            position: absolute;
+            background: linear-gradient(90deg, rgba(0, 0, 0, 0.80) 19.5%, rgba(2, 174, 0, 0.20) 62.89%);
+        }
+
+
+
+        .hero-content-9 {
+            padding-top: 190px;
+            padding-bottom: 323px;
+            position: relative;
+            z-index: 9;
+
+            @include breakpoint(md){
+               padding-top: 160px;
+            }
+            @include breakpoint(sm){
+               padding-top: 120px;
+               padding-bottom: 250px;
+            }
+
+            .pixfix-cap {
+                .title  {
+                    font-weight: 600;
+                    font-size: 104.717px;
+                    line-height: 122px;
+                    letter-spacing: -3.142px;
+                    margin-bottom: 13px;
+                    color: var(--rr-color-common-white);
+
+                    @include breakpoint(lg){
+                        font-size: 80px;
+                        line-height: 90px;
+                        letter-spacing: 0;
+                    }
+                    @include breakpoint(md){
+                        font-size: 50px;
+                        line-height: 60px;
+                    }
+                    @include breakpoint(sm){
+                        font-size: 35px;
+                        line-height: 45px;
+                    }
+                }
+
+                p {
+                    font-size: 20.962px;
+                    line-height: 30px; 
+                    margin-bottom: 0;
+                    color: var(--rr-color-common-white);
+                }
+            }
+
+            .pixfix-btn {
+                display: flex;
+                gap: 20px;
+
+                @include breakpoint(sm){
+                   display: inline-grid;
+                }
+
+                .rr-secondary-btn {
+                    padding: 18.5px 36px;
+                }
+
+                .btn-border {
+                    gap: 10px;
+                    display: flex;
+                    align-items: center;
+                    background-color: transparent;
+                    color: var(--rr-color-common-white);
+                    border: 1px solid var(--rr-color-common-white);
+
+                    &::before {
+                        background-color: var(--rr-color-theme-green2);
+                    }
+                    
+                    &:hover {
+                      border-color: transparent;  
+                    }
+                }
+
+                .btn-green {
+                    gap: 10px;
+                    display: flex;
+                    align-items: center;
+                    color: var(--rr-color-common-white);
+                    background-color: var(--rr-color-theme-green2);
+
+                    @include breakpoint(sm){
+                        margin: 0;
+                        width: fit-content;
+                    }
+                }
+            }
+        }
+    }
+
+    &__bg {
+        left: 0;
+        top: 0;
+        position: absolute;
+        transition: all 0.3s;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .slider-arrow-9{
+        position: absolute;
+        right: 260px;
+        transform: translate(-50%, -70%);
+        top: 50%;
+        z-index: 9;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        .slider-nav{
+            background: var(--rr-color-theme-green2);
+            color: var(--rr-color-common-white);
+            backdrop-filter: inherit;
+            height: 56px;
+            width: 56px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 10;
+            @include transition (all 0.3s ease-in-out);
+            &:hover{
+                background: var(--rr-color-theme-secondary);
+                color: var(--rr-color-heading-primary);
+            }
+        }
+        .slider-next{
+            left: auto;
+            right: 100px;
+        }
+        @include breakpoint(md){
+            display: none;
+        }
+    }
+}
+
+/* Kenburns Effect */
+.kenburns {
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    animation-fill-mode: both;
+}
+
+.swiper-slide-active .kenburns-top {
+    animation: kenburns-top 8s linear infinite;
+}
+
+@keyframes kenburns-top {
+    0% {
+        transform: scale(1) translateY(0);
+        transform-origin: 50% 16%;
+    }
+
+    100% {
+        transform: scale(1.1) translateY(-20px);
+        transform-origin: top;
+    }
+}

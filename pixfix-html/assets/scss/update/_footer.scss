@@ -1,0 +1,151 @@
+@use "../utilities" as *;
+
+.footer-8 {
+
+    &__area {
+        background-color: #2C4800;
+        border-radius: 10px;
+        padding-top: 210px;
+        margin-bottom: 20px;
+    }
+    
+    &-widget {
+
+        @include breakpoint(md) {
+            margin-bottom: 40px;
+        }
+        &.widget-2 {
+            margin-left: 81px;
+
+            @include breakpoint(lg) {
+                margin-left: 0;
+            }
+
+            @include breakpoint(sm) {
+                margin-top: 40px;
+            }
+        }
+    }
+
+
+    &__top-info {
+        gap: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        padding-bottom: 70px;
+        justify-content: space-between;
+        padding-right: 40px;
+        @include breakpoint(sm) {
+           gap: 10px;
+           padding-right: 0;
+        }
+
+        &__item {
+
+            .icon {
+                width: 36px;
+                height: 36px;
+                display: flex;
+                align-items: center;
+                margin-bottom: 15px;
+                justify-content: center;
+                border-radius: 500px;
+                background-color: rgb(255 255 255 / 20%);
+                color: var(--rr-color-common-white);
+            }
+
+            a {
+                color: #DDDDDD;
+
+                &:hover {
+                    color: var(--rr-color-theme-green2);
+                }
+            }
+
+            .title {
+                color: var(--rr-color-common-white);
+            }
+        }
+    }
+
+    &__list {
+        gap: 46px;
+        display: flex;
+        list-style: none;
+
+        @include breakpoint(lg) {
+            gap: 20px;
+        }
+
+        @include breakpoint(xs) {
+           flex-wrap: wrap;
+           gap: 0px 20px;
+        }
+
+        li {
+            a {
+                color: #DDDDDD;
+
+                &:hover {
+                    color: var(--rr-color-theme-green2);
+                }
+            }
+        }
+    }
+    &__social-list {
+        display: flex;
+        list-style: none;
+        gap: 16px;
+        justify-content: end;
+
+        @include breakpoint(sm) {
+            justify-content: start;
+        }
+
+        li {
+            
+            a {
+                display: flex;
+                align-items: center;
+                width: 30px;
+                height: 30px;
+                border-radius: 500px;
+                border: 1px solid var(--rr-color-common-white);
+                justify-content: center;
+                line-height: 0;
+                color: var(--rr-color-common-white);
+                font-size: 14px;
+    
+                &:hover {
+                    background-color: var(--rr-color-common-white);
+                    border-color: transparent;
+                    color: #2C4800;
+                }
+
+            }
+        }
+    }
+}
+
+.copyright-area {
+
+    .copyright-content {
+
+        &.copyright-content-8 { 
+            margin-top: 80px;
+            border-top: 1px solid rgb(255 255 255 / 20%);
+
+            .copy-list {
+                li {
+                    a {
+
+                        &:hover {
+                            color: var(--rr-color-theme-green2);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

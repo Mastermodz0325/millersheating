@@ -1,0 +1,130 @@
+@use "../utilities" as *;
+
+
+
+.faq-9 {
+    .section-heading {
+        .section-title {
+            font-size: 60px;
+        }
+    }
+
+    &__tab {
+        .accordion-item {
+            border: 3px solid #E4E4E4;
+            border-radius: 20px;
+            margin-bottom: 30px;
+            color: inherit;
+            overflow: hidden;
+            background-color: transparent;
+
+            &:last-of-type {
+                margin-bottom: 0;
+
+                @include breakpoint(md) {
+                    margin-bottom: 30px;
+                }
+            }
+
+            &:not(:first-of-type) {
+                border-top: 3px solid #E4E4E4;
+            }
+
+            .accordion-body {
+                padding: 0 35px 35px 80px;
+
+                p {
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 28.8px;
+                    margin-bottom: 0;
+                    color: #000000;
+                }
+
+                @include breakpoint(lg) {
+                    padding: 0 35px 35px;
+                }
+
+                @include breakpoint(sm) {
+                    padding: 0 20px 20px;
+                }
+            }
+
+            .accordion-header {
+                .accordion-button {
+                    font-size: 30px;
+                    font-weight: 700;
+                    line-height: 36px;
+                    cursor: pointer;
+                    overflow: hidden;
+                    color: #000000;
+                    background: transparent;
+                    letter-spacing: -0.72px;
+                    padding: 30px;
+                    padding-bottom: 20px;
+                    transition: .3s;
+                    font-family: var(--rr-ff-heading);
+
+                    @include breakpoint(sm) {
+                        padding: 20px;
+                        font-size: 20px;
+                        align-items: start;
+                    }
+
+                    span {
+                        margin-right: 22px;
+                        border-radius: 5px;
+                        padding: 9.5px 13.9px;
+                        background: rgb(23 23 23 / 10%);
+
+                        @include breakpoint(sm) {
+                            display: none;
+                        }
+                    }
+
+                    &.collapsed {
+                        padding: 30px;
+
+                        @include breakpoint(sm) {
+                            padding: 20px;
+                        }
+                    }
+
+                    &:focus {
+                        z-index: 3;
+                        border-color: inherit;
+                        outline: 0;
+                        box-shadow: inherit;
+                    }
+
+                    &::after {
+                        margin-left: auto;
+                        content: "\2b";
+                        height: inherit;
+                        line-height: 1;
+                        font-size: 20px;
+                        font-weight: 400;
+                        background-image: inherit;
+                        font-family: "Font Awesome 6 Pro";
+
+                        @include breakpoint(sm) {
+                            margin-top: 10px;
+                        }
+                    }
+
+                    &:not(.collapsed) {
+                        color: inherit;
+                        background-color: inherit;
+                        box-shadow: inherit;
+
+                        &::after {
+                            content: "\f068";
+                            transform: inherit;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+}

@@ -1,0 +1,49 @@
+@use "../utilities" as *;
+
+.mb-minus-30 {
+    margin-bottom: -30px;
+}
+.winning-award {
+    margin-top: -160px;
+    position: relative;
+    z-index: 9;
+
+    &__item {
+        border-radius: 10px;
+        overflow: hidden;
+        padding: 50px 20px 45px;
+        margin-bottom: 30px;
+        text-align: center;
+        background-color: var(--rr-color-theme-green2);
+        position: relative;
+
+
+        &::before {
+            content: "";
+            width: 416px;
+            opacity: 0.1;
+            height: 416px;
+            border-radius: 500px;
+            background: var(--rr-color-common-white);
+            position: absolute;
+            top: -252px;
+            left: 50%;
+            transform: translate(-50%, 0px);
+        }
+        .title {
+            color: var(--rr-color-common-white);
+            margin-bottom: 30px;
+        }
+
+        img {
+            margin-bottom: 25px;
+        }
+
+        p {
+            font-size: 24px;
+            font-family: var(--rr-ff-heading);
+            font-weight: var(--rr-fw-bold);
+            color: var(--rr-color-common-white);
+        }
+    }
+}

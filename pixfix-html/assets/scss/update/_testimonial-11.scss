@@ -1,0 +1,128 @@
+@use "../utilities" as *;
+
+
+
+.customer-feedback-11 {
+    background: #040401;
+    border-radius: 10px;
+    position: relative;
+
+    .swiper-wrapper {
+        transition-timing-function: linear;
+
+        .swiper-slide {
+            width: auto;
+        }
+    }
+
+    .section-heading {
+        .section-title {
+            @include breakpoint(lg) {
+                margin: 0 auto !important;
+                margin-bottom: 25px !important;
+            }
+        }
+    }
+
+    &__thumb {
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
+        position: relative;
+
+        .quote {
+            position: absolute;
+            right: -14px;
+            top: 50%;
+            transform: translateY(-50%);
+
+            i {
+                width: 35px;
+                height: 35px;
+                background: #FF3600;
+                color: #fff;
+                border-radius: 30px;
+                text-align: center;
+                line-height: 32px;
+                border: 2px solid #fff;
+            }
+        }
+    }
+
+    &__author {
+        display: flex;
+        align-items: center;
+        gap: 23px;
+    }
+
+    &__dec {
+        margin-bottom: 0;
+        margin-top: 30px;
+        color: var(--rr-color-common-white);
+    }
+
+    &__slider-1 {
+        &__item {
+            background: rgb(255 255 255 / 7%);
+            border-radius: 10px;
+            padding: 40px;
+            padding-right: 135px;
+            max-width: 520px;
+
+            @include breakpoint(md) {
+                padding: 30px;
+                padding-right: 40px;
+                max-width: 400px;
+            }
+
+            @include breakpoint(sm) {
+                padding: 20px;
+                max-width: 320px;
+            }
+        }
+    }
+
+    &__bg {
+        background: linear-gradient(270deg, #040401 0%, rgba(4, 4, 1, 0) 100%);
+        border-radius: 10px;
+        transform: matrix(-1, 0, 0, 1, 0, 0);
+        width: 189px;
+        height: 100%;
+        z-index: 2;
+
+        &__shape-1 {
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+
+        &__shape-2 {
+            position: absolute;
+            right: 0;
+            top: 0;
+            transform: matrix(1, 0, 0, 1, 0, 0);
+        }
+
+        @include breakpoint(md) {
+            display: none;
+        }
+
+    }
+
+    &__text {
+        .name {
+            font-size: 30px;
+            font-weight: 700;
+            line-height: 36px;
+            margin-bottom: 0;
+            color: var(--rr-color-common-white);
+        }
+
+        .position {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 28.8px;
+            color: var(--rr-color-common-white);
+        }
+    }
+}

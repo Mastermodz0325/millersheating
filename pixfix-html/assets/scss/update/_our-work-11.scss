@@ -1,0 +1,124 @@
+@use "../utilities" as *;
+
+
+
+.our-work-11 {
+    background: #F3FCF4;
+    border-radius: 40px;
+    margin: 20px;
+
+    &__btn {
+        .rr-secondary-btn {
+            padding: 19.5px 29.5px;
+            color: var(--rr-color-common-white);
+            background-color: var(--rr-color-theme-primary2);
+            i{
+                margin-left: 10px;
+            }
+        }
+
+        @include breakpoint(sm) {
+            margin-bottom: 30px;
+        }
+    }
+
+    .section-heading {
+        margin-bottom: 33px;
+
+        .section-title {
+            @include breakpoint(sm) {
+                margin: 0;
+            }
+        }
+    }
+
+    &__item {
+        background: #fff;
+        border-radius: 40px;
+        padding: 20px;
+        margin-bottom: 50px;
+
+        @include breakpoint(sm) {
+            border-radius: 10px;
+            padding: 10px;
+        }
+
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+    }
+
+    &__thumb {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        position: relative;
+
+        img {
+            border-radius: 40px;
+        }
+
+        &:hover {
+            .our-work-11__arrow {
+                top: 50%;
+                opacity: 1;
+                visibility: visible;
+            }
+        }
+    }
+
+    &__title {
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 36px;
+        margin-top: 20px;
+        margin-bottom: 5px;
+        color: #0D2227;
+
+        @include breakpoint(sm) {
+            font-size: 24px;
+            line-height: 20px;
+        }
+    }
+
+    &__position {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 30px;
+        color: #0D2227;
+    }
+
+    &__arrow {
+        position: absolute;
+        left: 50%;
+        top: 40%;
+        transform: translate(-50%, -50%);
+        opacity: 0;
+        visibility: hidden;
+        transition: .5s;
+
+        .rr-secondary-btn {
+            width: 118px;
+            height: 118px;
+            background: #FF3600;
+            border-radius: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 35px;
+            color: #fff;
+            border: 2px solid #fff;
+            transform: rotate(-45deg);
+
+            @include breakpoint(md) {
+                width: 80px;
+                height: 80px;
+                font-size: 30px;
+            }
+
+            i {
+                margin-left: 0;
+            }
+        }
+    }
+}

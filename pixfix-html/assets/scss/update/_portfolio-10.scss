@@ -1,0 +1,142 @@
+@use "../utilities" as *;
+
+
+.portfolio-10 {
+    background: #F7F7F7;
+    margin: 0 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+
+    .swiper-wrapper {
+        transform: translate3d(-4400px, 0px, 0px);
+    }
+
+    @include breakpoint(sm) {
+        margin: 0px;
+        margin-top: 20px;
+    }
+
+    .section-heading {
+        margin-bottom: 0;
+
+        .section-title {
+            margin: 0;
+        }
+    }
+
+    &__thumb {
+        max-width: 1070px;
+        max-height: 590px;
+        object-fit: cover;
+
+        img {
+            border-radius: 10px;
+            filter: opacity(0.3);
+            transition: .6s;
+        }
+    }
+
+    &__btn {
+        .arrow-btn {
+            width: 118px;
+            height: 118px;
+            background: #FAD105;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 200px;
+            color: #0A0C07;
+            font-size: 45px;
+            transform: rotate(-45deg);
+            border: 6px solid var(--rr-color-common-white);
+
+            @include breakpoint(sm) {
+                width: 80px;
+                height: 80px;
+                font-size: 30px;
+                border: 3px solid var(--rr-color-common-white);
+            }
+
+            &.rr-secondary-btn {
+                i {
+                    margin-left: 0;
+                }
+
+                &:before {
+                    background: #FF3600;
+                }
+            }
+
+            &:hover {
+                color: var(--rr-color-common-white);
+            }
+        }
+    }
+
+    &__btn {
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        opacity: 0;
+        visibility: hidden;
+        transition: .3s;
+        transform: translate(-50%, -50%);
+    }
+
+    &__active {
+        margin-right: -100%;
+
+        @include breakpoint(lg) {
+            margin-right: 0;
+        }
+
+        .swiper-slide {
+            width: auto;
+
+            @include breakpoint(lg) {
+                width: inherit;
+            }
+
+            &.swiper-slide-active {
+                .portfolio-10 {
+                    &__thumb {
+                        img {
+                            filter: opacity(1);
+                        }
+                    }
+
+                    &__btn {
+                        top: 50%;
+                        opacity: 1;
+                        visibility: visible;
+                    }
+                }
+            }
+        }
+    }
+
+    &__button {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    &__arrow {
+        width: 60px;
+        height: 60px;
+        background: #FF3600;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 200px;
+        font-size: 20px;
+    }
+
+    &__top {
+        display: flex;
+        align-items: end;
+        margin-bottom: 60px;
+        justify-content: space-between;
+    }
+}
