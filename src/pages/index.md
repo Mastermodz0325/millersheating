@@ -9,6 +9,6 @@ seo_description: Affordable HVAC installs and repairs.
 
 {{ hero_sub }}
 
-- Licensed & insured  
-- Free estimates  
+- Licensed & insured
+- Free estimates
 - Financing available
