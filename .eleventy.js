@@ -1,18 +1,19 @@
-module.exports = function(eleventyConfig) {
-  // copy through folders that aren’t templates
-  eleventyConfig.addPassthroughCopy({"assets": "assets"});
-  eleventyConfig.addPassthroughCopy({"static": "static"});   // for uploads
-  eleventyConfig.addPassthroughCopy("admin");                 // <-- this fixes /admin 404
+module.exports = function (eleventyConfig) {
+  // Copy essential folders through to the final build
+  eleventyConfig.addPassthroughCopy({ "assets": "assets" });
+  eleventyConfig.addPassthroughCopy({ "admin": "admin" });
+  eleventyConfig.addPassthroughCopy({ "static": "static" }); // optional but safe
 
   return {
     dir: {
-      input: "src",
+      input: ".",        // your site uses root-level HTML files
       includes: "_includes",
       data: "_data",
       output: "_site"
     },
-    templateFormats: ["njk", "md", "html"],
+    templateFormats: ["html", "md", "njk"],
     htmlTemplateEngine: "njk",
     markdownTemplateEngine: "njk"
   };
 };
+
