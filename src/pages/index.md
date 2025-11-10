@@ -1,14 +1,7 @@
 ---
 layout: base.njk
 title: Home
-hero_title: Reliable Heating & Cooling
-hero_sub: 24/7 service in Greenville & surrounding areas
-seo_description: Affordable HVAC installs and repairs.
 ---
-# {{ hero_title }}
+# Welcome to Millers Heating
 
-{{ hero_sub }}
-
-- Licensed & insured
-- Free estimates
-- Financing available
+This is a test page rendered by Eleventy. If you can read this on your site, the build works.
