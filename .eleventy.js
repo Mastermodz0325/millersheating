@@ -2,15 +2,14 @@
 const { DateTime } = require("luxon");
 
 module.exports = function(eleventyConfig) {
-  // Copy static assets THROUGH to _site
-  eleventyConfig.addPassthroughCopy({"assets": "assets"});
-  eleventyConfig.addPassthroughCopy({"static": "static"});
-  eleventyConfig.addPassthroughCopy({"admin": "admin"}); // <-- makes /admin work
+  // Copy static assets straight through to _site
+  eleventyConfig.addPassthroughCopy({ "assets": "assets" });
+  eleventyConfig.addPassthroughCopy({ "static": "static" }); // for CMS uploads
+  eleventyConfig.addPassthroughCopy({ "admin": "admin" });   // makes /admin work
 
-  // Safe "date" filter so Nunjucks can format dates if you use it in layouts
+  // Nunjucks "date" filter (fixes Netlify error: "filter not found: date")
   eleventyConfig.addFilter("date", (value, fmt = "yyyy-LL-dd") => {
     try {
-      // Accept Date or string
       const d = value instanceof Date ? value : new Date(value);
       return DateTime.fromJSDate(d).toFormat(fmt);
     } catch {
@@ -30,4 +29,3 @@ module.exports = function(eleventyConfig) {
     htmlTemplateEngine: "njk"
   };
 };
-
