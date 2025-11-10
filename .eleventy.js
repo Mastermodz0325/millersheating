@@ -5,9 +5,9 @@ module.exports = function(eleventyConfig) {
   // Copy static assets straight through to _site
   eleventyConfig.addPassthroughCopy({ "assets": "assets" });
   eleventyConfig.addPassthroughCopy({ "static": "static" }); // for CMS uploads
-  eleventyConfig.addPassthroughCopy({ "admin": "admin" });   // makes /admin work
+  eleventyConfig.addPassthroughCopy({ "admin": "admin" });   // make /admin work
 
-  // Nunjucks "date" filter (fixes Netlify error: "filter not found: date")
+  // Simple "date" filter (safe)
   eleventyConfig.addFilter("date", (value, fmt = "yyyy-LL-dd") => {
     try {
       const d = value instanceof Date ? value : new Date(value);
