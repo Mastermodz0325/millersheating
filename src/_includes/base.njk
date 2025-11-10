@@ -9,6 +9,7 @@
 <body>
   <header>
     <h1>Millers Heating</h1>
+    <!-- put your real nav/logo here later -->
   </header>
 
   <main>
@@ -16,7 +17,9 @@
   </main>
 
   <footer>
-    <p>&copy; {{ "now" | date("yyyy") }} Millers Heating</p>
+    <p>&copy; {{ (new Date()).getFullYear() }} Millers Heating</p>
   </footer>
 </body>
 </html>
+
+
